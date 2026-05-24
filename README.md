@@ -20,6 +20,7 @@ SkillRAE has two stages:
 ![Example skill card](pictures/citation_management_skill_card.png)
 
 The repository includes the retrieval backend, context-compilation logic, build pipeline, and skill pool used by the paper's main method.
+The `pictures/` directory contains both README-friendly PNG renderings and the original PDF figure files from the paper.
 
 ## Contents
 
