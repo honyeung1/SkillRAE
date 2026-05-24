@@ -10,7 +10,7 @@ This sanitized source package contains the code and data needed to inspect and r
 - `tasks/`: SkillsBench task definitions used by the backend runner.
 - `skillsbench_private/`: runtime adapters used by the retrieval-task backend.
 - `build_pipeline/`: scripts used to construct graph, representation, embedding, and capability-cluster artifacts.
-- `skill_nodes.json`, `subunit_nodes.json`, `edges.json`, `canonical_skill_representations.json`, `skill_l2_mapping.json`, `subunit_ids.json`, `subunit_embeddings.npy`: retrieval artifacts consumed by `retrieval.py`.
+- `edges.json` and `canonical_skill_representations.json`: included retrieval artifacts consumed by `retrieval.py`.
 - `examples/api.env.example`: placeholder-only credential template.
 
 ## What is intentionally not included
@@ -63,7 +63,7 @@ bash experiments/retrieval_tasks_backend/run_retrieval_tasks_backend.sh
 
 ## Retrieval artifacts
 
-The included graph and embedding artifacts are loaded by `retrieval.py`. If you rebuild them, use `build_pipeline/` and keep the generated artifact names compatible with `retrieval.py`:
+`retrieval.py` expects several graph and embedding artifacts locally, but this public repository intentionally omits some larger derived files. Rebuild or supply them locally using `build_pipeline/` with the following names:
 
 - `skill_nodes.json`
 - `subunit_nodes.json`

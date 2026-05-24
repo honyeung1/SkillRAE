@@ -13,3 +13,10 @@ outputs/
 phase1_claude_runs/
 *.tmp
 *.swp
+skill_l2_mapping.json
+skill_nodes.json
+skill_representations.json
+skill_summaries.json
+subunit_embeddings.npy
+subunit_ids.json
+subunit_nodes.json
