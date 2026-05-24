@@ -23,3 +23,4 @@ subunit_nodes.json
 filtered_skill_nodes_simulated.json
 canonical_skill_representations.json
 RELEASE_AUDIT.md
+pictures/*.pdf

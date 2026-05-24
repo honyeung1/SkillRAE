@@ -1,8 +1,25 @@
 # SkillRAE Paper Code
 
-This sanitized source package contains the code and data needed to inspect and run the paper's main retrieval-time skill compilation method. It intentionally omits baseline implementations, local run artifacts, Git history, personal machine configuration, and API credentials.
+Paper code for SkillRAE, a two-stage retrieval-augmented execution framework for agent skill-based context compilation over a multi-level skill graph.
 
 Paper: https://arxiv.org/abs/2605.10114
+
+This sanitized source package contains the code needed to inspect and run the paper's main method. It intentionally omits baseline implementations, local run artifacts, Git history, personal machine configuration, API credentials, and several larger derived artifacts.
+
+## Overview
+
+![SkillRAE system overview](pictures/SkillRAE_system_overview.png)
+
+SkillRAE has two stages:
+
+- Offline stage: build a multi-level skill graph over communities, skills, and reusable subunits.
+- Online stage: retrieve relevant skills and subunits, then compile them into compact task-specific execution context.
+
+## Example Skill
+
+![Example skill card](pictures/citation_management_skill_card.png)
+
+The repository includes the retrieval backend, context-compilation logic, build pipeline, and skill pool used by the paper's main method.
 
 ## Contents
 
