@@ -2,6 +2,8 @@
 
 This sanitized source package contains the code and data needed to inspect and run the paper's main retrieval-time skill compilation method. It intentionally omits baseline implementations, local run artifacts, Git history, personal machine configuration, and API credentials.
 
+Paper: https://arxiv.org/abs/2605.10114
+
 ## Contents
 
 - `retrieval.py`: hierarchical skill retriever over the skill graph and precomputed retrieval artifacts.
