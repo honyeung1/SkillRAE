@@ -10,7 +10,7 @@ This sanitized source package contains the code and data needed to inspect and r
 - `tasks/`: SkillsBench task definitions used by the backend runner.
 - `skillsbench_private/`: runtime adapters used by the retrieval-task backend.
 - `build_pipeline/`: scripts used to construct graph, representation, embedding, and capability-cluster artifacts.
-- `edges.json` and `canonical_skill_representations.json`: included retrieval artifacts consumed by `retrieval.py`.
+- `edges.json`: included retrieval artifact consumed by `retrieval.py`.
 - `examples/api.env.example`: placeholder-only credential template.
 
 ## What is intentionally not included
