@@ -1,0 +1,120 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
+source "${REPO_ROOT}/scripts/skillsbench_env.sh"
+skillsbench_clear_global_proxy_env_for_api_only
+skillsbench_export_docker_proxy_env
+
+HOST_REPO_ROOT="${SKILLSBENCH_RUNNER_HOST_REPO_ROOT:-$REPO_ROOT}"
+HOST_ARTIFACT_ROOT="${SKILLSBENCH_RUNNER_HOST_ARTIFACT_ROOT:-${REPO_ROOT}/deployment/runner/artifacts}"
+
+HOST_REPO_ROOT="$(cd "$HOST_REPO_ROOT" && pwd)"
+mkdir -p "$HOST_ARTIFACT_ROOT"
+HOST_ARTIFACT_ROOT="$(cd "$HOST_ARTIFACT_ROOT" && pwd)"
+
+export SKILLSBENCH_RUNNER_HOST_REPO_ROOT="$HOST_REPO_ROOT"
+export SKILLSBENCH_RUNNER_HOST_ARTIFACT_ROOT="$HOST_ARTIFACT_ROOT"
+export SKILLSBENCH_ARTIFACTS_HOST_DIR="$HOST_ARTIFACT_ROOT"
+
+cd "${SCRIPT_DIR}"
+docker compose up -d --build runner
+
+exec_args=(
+  exec
+  -e "SKILLSBENCH_REPO_ROOT=${HOST_REPO_ROOT}"
+  -e "SKILLSBENCH_ARTIFACT_ROOT=${HOST_ARTIFACT_ROOT}"
+  -e "SKILLSBENCH_RUNS_ROOT=${HOST_ARTIFACT_ROOT}/runs"
+  -e "SKILLSBENCH_SHARED_JOBS_DIR=${HOST_ARTIFACT_ROOT}/jobs"
+  -e "SKILLSBENCH_CACHE_ROOT=${HOST_ARTIFACT_ROOT}/.cache"
+)
+
+forward_env_vars=(
+  ARTIFACT_ROOT
+  RUNS_DIR
+  OUT_DIR
+  JOBS_DIR
+  TASKS_FILE
+  MAX_PARALLEL
+  TOP_K
+  RETRIEVAL_MODE
+  SYNTHESIZED_SKILL_POSITION_MODE
+  POST_RETRIEVAL_RERANK_ENABLED
+  POST_RETRIEVAL_RERANK_TOP_M
+  POST_RETRIEVAL_RERANK_MODEL
+  POST_RETRIEVAL_RERANK_TIMEOUT
+  POST_RETRIEVAL_RERANK_MAX_KEEP
+  HARBOR_AGENT
+  HARBOR_MODEL
+  RESUME_EXISTING_ROWS
+  LAUNCH_STAGGER_SECONDS
+  LOCAL_SCRATCH_ROOT
+  IO_CGROUP_ENABLE
+  IO_CGROUP_ADAPTIVE_ENABLE
+  IO_GUARD_ENABLE
+  IO_GUARD_MAX_WAIT_SECONDS
+  IO_GUARD_FALLBACK_TO_GLOBAL_IF_DEVICE_MISSING
+  IO_GUARD_SOME_AVG10_MAX
+  IO_GUARD_SOME_AVG60_MAX
+  IO_GUARD_FULL_AVG10_MAX
+  IO_GUARD_FULL_AVG60_MAX
+  IO_GUARD_DEVICE_W_AWAIT_MS_MAX
+  IO_GUARD_DEVICE_UTIL_PCT_MAX
+  IO_GUARD_DEVICE_QDEPTH_MAX
+  IO_GUARD_HARD_SOME_AVG10_MAX
+  IO_GUARD_HARD_SOME_AVG60_MAX
+  IO_GUARD_HARD_FULL_AVG10_MAX
+  IO_GUARD_HARD_FULL_AVG60_MAX
+  IO_TEARDOWN_COOLDOWN_ENABLE
+  IO_TEARDOWN_HEALTHY_FULL_AVG10
+  IO_TEARDOWN_HEALTHY_W_AWAIT_MS
+  IO_TEARDOWN_HEALTHY_SAMPLES
+  IO_TEARDOWN_MAX_WAIT_SECONDS
+  IO_DEFER_ON_COOLDOWN_FAILURE
+  IO_DEFER_MAX_ATTEMPTS
+  EXPERIMENT_SEED
+  SEED
+  PYTHONHASHSEED
+  SKILLSBENCH_PROXY_SCOPE
+  SKILLSBENCH_DOCKER_PROXY_URL
+  SKILLSBENCH_DISABLE_DOCKER_PROXY
+  SKILLSBENCH_PREBUILT_IMAGE_REGISTRY
+  SKILLSBENCH_PREBUILT_IMAGE_TAG
+  SKILLSBENCH_PREBUILT_IMAGE_MAP
+  SKILLSBENCH_PREBUILT_IMAGE_REQUIRE_LOCAL
+)
+
+proxy_env_vars=(
+  HTTP_PROXY
+  HTTPS_PROXY
+  ALL_PROXY
+  http_proxy
+  https_proxy
+  all_proxy
+  NO_PROXY
+  no_proxy
+)
+
+for var_name in "${forward_env_vars[@]}"; do
+  if [ -n "${!var_name+x}" ]; then
+    exec_args+=(-e "${var_name}=${!var_name}")
+  fi
+done
+
+if skillsbench_docker_proxy_enabled; then
+  for var_name in "${proxy_env_vars[@]}"; do
+    if [ -n "${!var_name+x}" ]; then
+      exec_args+=(-e "${var_name}=${!var_name}")
+    fi
+  done
+fi
+
+exec_args+=(
+  runner
+  bash
+  /workspace/skillsbench-private/experiments/retrieval_tasks_backend/run_retrieval_tasks_backend.sh
+)
+
+docker compose "${exec_args[@]}" "$@"

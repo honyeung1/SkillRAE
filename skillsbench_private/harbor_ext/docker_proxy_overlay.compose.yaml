@@ -1,0 +1,11 @@
+services:
+  main:
+    environment:
+      HTTP_PROXY: ${SKILLSBENCH_DOCKER_PROXY_URL:-http://172.21.160.1:29759}
+      HTTPS_PROXY: ${SKILLSBENCH_DOCKER_PROXY_URL:-http://172.21.160.1:29759}
+      ALL_PROXY: ${SKILLSBENCH_DOCKER_PROXY_URL:-http://172.21.160.1:29759}
+      http_proxy: ${SKILLSBENCH_DOCKER_PROXY_URL:-http://172.21.160.1:29759}
+      https_proxy: ${SKILLSBENCH_DOCKER_PROXY_URL:-http://172.21.160.1:29759}
+      all_proxy: ${SKILLSBENCH_DOCKER_PROXY_URL:-http://172.21.160.1:29759}
+      NO_PROXY: localhost,127.0.0.1,::1
+      no_proxy: localhost,127.0.0.1,::1

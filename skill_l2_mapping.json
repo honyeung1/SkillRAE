@@ -1,0 +1,293 @@
+{
+  "l2_001": {
+    "label": "least-squares",
+    "skills": [
+      "skill_191",
+      "skill_143",
+      "skill_093",
+      "skill_011",
+      "skill_140",
+      "skill_013",
+      "skill_040",
+      "skill_062",
+      "skill_166",
+      "skill_065",
+      "skill_125",
+      "skill_016",
+      "skill_087",
+      "skill_118",
+      "skill_053",
+      "skill_151",
+      "skill_079",
+      "skill_054",
+      "skill_042",
+      "skill_189",
+      "skill_160",
+      "skill_068",
+      "skill_058",
+      "skill_192",
+      "skill_190",
+      "skill_035",
+      "skill_176",
+      "skill_080",
+      "skill_107",
+      "skill_002",
+      "skill_020",
+      "skill_098",
+      "skill_084",
+      "skill_179",
+      "skill_117",
+      "skill_147",
+      "skill_099",
+      "skill_025"
+    ],
+    "count": 38
+  },
+  "l2_002": {
+    "label": "creator-find",
+    "skills": [
+      "skill_168",
+      "skill_051",
+      "skill_114",
+      "skill_115",
+      "skill_106",
+      "skill_086",
+      "skill_073",
+      "skill_085",
+      "skill_131",
+      "skill_010",
+      "skill_178",
+      "skill_083",
+      "skill_021",
+      "skill_169",
+      "skill_005",
+      "skill_036",
+      "skill_029",
+      "skill_122",
+      "skill_049",
+      "skill_194",
+      "skill_126",
+      "skill_187",
+      "skill_177",
+      "skill_026",
+      "skill_022",
+      "skill_094",
+      "skill_096",
+      "skill_070",
+      "skill_095",
+      "skill_014",
+      "skill_081",
+      "skill_018",
+      "skill_119",
+      "skill_067",
+      "skill_108"
+    ],
+    "count": 35
+  },
+  "l2_003": {
+    "label": "erlang-concurrency",
+    "skills": [
+      "skill_037",
+      "skill_038",
+      "skill_205",
+      "skill_133",
+      "skill_091",
+      "skill_104",
+      "skill_097",
+      "skill_120",
+      "skill_100",
+      "skill_159",
+      "skill_039",
+      "skill_116",
+      "skill_088",
+      "skill_186",
+      "skill_072",
+      "skill_076",
+      "skill_101",
+      "skill_175",
+      "skill_009",
+      "skill_027",
+      "skill_110"
+    ],
+    "count": 21
+  },
+  "l2_004": {
+    "label": "speech-text",
+    "skills": [
+      "skill_185",
+      "skill_170",
+      "skill_008",
+      "skill_031",
+      "skill_201",
+      "skill_033",
+      "skill_113",
+      "skill_103",
+      "skill_071",
+      "skill_063",
+      "skill_064",
+      "skill_041",
+      "skill_150",
+      "skill_077",
+      "skill_089",
+      "skill_050",
+      "skill_171"
+    ],
+    "count": 17
+  },
+  "l2_005": {
+    "label": "senior-java",
+    "skills": [
+      "skill_163",
+      "skill_028",
+      "skill_164",
+      "skill_161",
+      "skill_132",
+      "skill_182",
+      "skill_162",
+      "skill_183",
+      "skill_181",
+      "skill_184",
+      "skill_004",
+      "skill_075",
+      "skill_111",
+      "skill_141",
+      "skill_121",
+      "skill_173"
+    ],
+    "count": 16
+  },
+  "l2_006": {
+    "label": "xlsx-powerlifting",
+    "skills": [
+      "skill_129",
+      "skill_206",
+      "skill_112",
+      "skill_149",
+      "skill_130",
+      "skill_148",
+      "skill_023",
+      "skill_124",
+      "skill_069",
+      "skill_174",
+      "skill_015",
+      "skill_061",
+      "skill_074",
+      "skill_017",
+      "skill_128"
+    ],
+    "count": 15
+  },
+  "l2_007": {
+    "label": "reflow-machine",
+    "skills": [
+      "skill_144",
+      "skill_102",
+      "skill_090",
+      "skill_127",
+      "skill_057",
+      "skill_197",
+      "skill_167",
+      "skill_001",
+      "skill_060",
+      "skill_032",
+      "skill_109",
+      "skill_204",
+      "skill_146"
+    ],
+    "count": 13
+  },
+  "l2_008": {
+    "label": "video-ffmpeg",
+    "skills": [
+      "skill_200",
+      "skill_047",
+      "skill_044",
+      "skill_198",
+      "skill_045",
+      "skill_145",
+      "skill_199",
+      "skill_046",
+      "skill_048",
+      "skill_034",
+      "skill_006",
+      "skill_043",
+      "skill_158"
+    ],
+    "count": 13
+  },
+  "l2_009": {
+    "label": "vulnerability-reporting",
+    "skills": [
+      "skill_202",
+      "skill_059",
+      "skill_092",
+      "skill_195",
+      "skill_193",
+      "skill_024",
+      "skill_123",
+      "skill_180",
+      "skill_207",
+      "skill_019"
+    ],
+    "count": 10
+  },
+  "l2_010": {
+    "label": "docx-research",
+    "skills": [
+      "skill_030",
+      "skill_105",
+      "skill_066",
+      "skill_003",
+      "skill_007",
+      "skill_172",
+      "skill_082",
+      "skill_196",
+      "skill_052"
+    ],
+    "count": 9
+  },
+  "l2_011": {
+    "label": "python-scala",
+    "skills": [
+      "skill_139",
+      "skill_137",
+      "skill_135",
+      "skill_134",
+      "skill_138",
+      "skill_136",
+      "skill_188"
+    ],
+    "count": 7
+  },
+  "l2_012": {
+    "label": "search-cities",
+    "skills": [
+      "skill_154",
+      "skill_157",
+      "skill_153",
+      "skill_152",
+      "skill_156",
+      "skill_155"
+    ],
+    "count": 6
+  },
+  "l2_013": {
+    "label": "visual-stability",
+    "skills": [
+      "skill_055",
+      "skill_012",
+      "skill_056",
+      "skill_142",
+      "skill_203"
+    ],
+    "count": 5
+  },
+  "l2_014": {
+    "label": "image-editing",
+    "skills": [
+      "skill_078",
+      "skill_165"
+    ],
+    "count": 2
+  }
+}

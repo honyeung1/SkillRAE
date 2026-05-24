@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+.pytest_cache/
+.mypy_cache/
+.cache/
+runs/
+outputs/
+phase1_claude_runs/
+*.tmp
+*.swp

@@ -1,0 +1,10 @@
+services:
+  main:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      ANTHROPIC_BASE_URL: ${ANTHROPIC_BASE_URL}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      CLAUDE_CODE_MAX_OUTPUT_TOKENS: ${CLAUDE_CODE_MAX_OUTPUT_TOKENS}
+      OPENAI_API_BASE: ${OPENAI_API_BASE}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}

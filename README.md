@@ -1,0 +1,78 @@
+# SkillRAE Paper Code
+
+This sanitized source package contains the code and data needed to inspect and run the paper's main retrieval-time skill compilation method. It intentionally omits baseline implementations, local run artifacts, Git history, personal machine configuration, and API credentials.
+
+## Contents
+
+- `retrieval.py`: hierarchical skill retriever over the skill graph and precomputed retrieval artifacts.
+- `experiments/retrieval_tasks_backend/`: main retrieval-task backend, coordinator variants, context compilation, affiliated rescue, and summarization utilities.
+- `global_skill_pool/`: skill pool used by the main method.
+- `tasks/`: SkillsBench task definitions used by the backend runner.
+- `skillsbench_private/`: runtime adapters used by the retrieval-task backend.
+- `build_pipeline/`: scripts used to construct graph, representation, embedding, and capability-cluster artifacts.
+- `skill_nodes.json`, `subunit_nodes.json`, `edges.json`, `canonical_skill_representations.json`, `skill_l2_mapping.json`, `subunit_ids.json`, `subunit_embeddings.npy`: retrieval artifacts consumed by `retrieval.py`.
+- `examples/api.env.example`: placeholder-only credential template.
+
+## What is intentionally not included
+
+- Baseline code and baseline run outputs.
+- `.git`, `.codex`, `.claude`, local editor/agent state, and machine-specific configuration.
+- `runs/`, `outputs/`, `phase1_claude_runs/`, caches, bytecode, logs, and temporary experiment files.
+- Real API keys or provider credentials.
+
+## Environment
+
+Use Python 3.12 or newer. A minimal local setup is:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e .
+python -m pip install numpy pandas scikit-learn sentence-transformers openai pyyaml
+```
+
+The full task backend also expects Docker and Harbor-compatible task execution support when running benchmark tasks end to end.
+
+## Credentials
+
+Do not place credentials in this repository. Export them in your shell or load them from a private file outside the repository:
+
+```bash
+export OPENAI_API_KEY=your_key_here
+export ANTHROPIC_API_KEY=your_key_here
+export GEMINI_API_KEY=your_key_here
+```
+
+Only set the variables required by the model/provider you run.
+
+## Running the main method
+
+The main method is selected through the coordinator variant used by the retrieval-task backend. A typical one-task run has the following shape:
+
+```bash
+export COORDINATOR_VARIANT=A3_refine_compact
+export SKILLSBENCH_RETRIEVAL_DATA_DIR="$PWD"
+export TASKS_FILE=/path/to/tasks.txt
+export TASK_COUNT=1
+export OUT_DIR="$PWD/runs/example_A3_refine_compact"
+bash experiments/retrieval_tasks_backend/run_retrieval_tasks_backend.sh
+```
+
+`TASKS_FILE` should contain one task id per line. `OUT_DIR` should point to a writable output directory outside the submitted source package if you want to keep the package clean.
+
+## Retrieval artifacts
+
+The included graph and embedding artifacts are loaded by `retrieval.py`. If you rebuild them, use `build_pipeline/` and keep the generated artifact names compatible with `retrieval.py`:
+
+- `skill_nodes.json`
+- `subunit_nodes.json`
+- `edges.json`
+- `canonical_skill_representations.json`
+- `skill_l2_mapping.json`
+- `subunit_ids.json`
+- `subunit_embeddings.npy`
+
+## Notes for reviewers
+
+This package is focused on the paper's main method rather than comparison baselines. Baseline implementations were omitted to keep the submitted artifact minimal and to avoid mixing third-party/adaptation code with the method release.

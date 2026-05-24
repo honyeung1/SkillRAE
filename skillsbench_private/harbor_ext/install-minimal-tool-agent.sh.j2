@@ -1,0 +1,270 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+mkdir -p /installed-agent /logs/agent
+
+cat > /installed-agent/minimal_tool_agent_runner.py <<'PY'
+#!/usr/bin/env python3
+import argparse
+import json
+import os
+import re
+import subprocess
+import sys
+import textwrap
+import urllib.error
+import urllib.request
+from pathlib import Path
+
+
+SYSTEM_PROMPT = """You are MinimalToolAgent, a task-agnostic coding agent running in a container.
+
+You may only use these tools:
+1. read_file
+2. write_file
+3. bash
+
+Respond with exactly one action at a time using this strict ReAct format:
+Thought: <brief reasoning>
+Action: <read_file|write_file|bash>
+Action Input:
+<tool input>
+
+When the task is complete, respond exactly with:
+Final Answer: DONE
+
+Workflow rules:
+- Initial inspection of `/root/instruction.md` and `ls -R /root` may already be provided to you.
+- Do not assume filenames in advance; infer required outputs from the instruction and filesystem.
+- After exploration, quickly switch to execution: write code/scripts, run them with `bash`, inspect errors, fix them, and retry.
+- Prefer creating small scripts under `/root` and executing them with `python3`, `node`, or shell.
+- For large files, prefer `bash` with a heredoc, for example: `cat > /root/script.py <<'PY' ... PY`.
+- Always verify progress by checking whether required output files were created and contain plausible content.
+- If a command fails, analyze the error and immediately try a corrected command.
+- Avoid spending many steps only inspecting files. By step 5 you should usually be running code.
+- Keep thoughts short and action-oriented. Do not include multiple candidate actions in one response.
+- If you use `write_file`, the first line of Action Input must be the target path such as `/root/script.py`, and the remaining lines must be the file content. Do not wrap `write_file` input in Markdown code fences. Do not put source code, shebangs, or comments on the first line.
+- Do not use any tools other than the three listed above.
+"""
+
+SAFETY_PATTERNS = [
+    r"(^|\s)rm\s+-rf\s+/(\s|$)",
+    r"(^|\s)shutdown(\s|$)",
+    r"(^|\s)reboot(\s|$)",
+    r":\(\)\s*\{\s*:\|:\s*&\s*\};:",
+]
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--instruction-file", required=True)
+    parser.add_argument("--model", required=True)
+    parser.add_argument("--max-steps", type=int, default=30)
+    parser.add_argument("--bash-timeout", type=int, default=90)
+    parser.add_argument("--max-output-chars", type=int, default=8000)
+    parser.add_argument("--llm-timeout", type=int, default=180)
+    return parser.parse_args()
+
+
+def read_text(path_str: str) -> str:
+    path = Path(path_str)
+    try:
+        data = path.read_bytes()
+    except Exception as exc:
+        return f"ERROR: unable to read {path}: {exc}"
+    if b"\\x00" in data:
+        return f"NOTICE: {path} appears to be binary."
+    try:
+        text = data.decode("utf-8")
+    except UnicodeDecodeError:
+        return f"NOTICE: {path} is not valid UTF-8 text."
+    if len(text) > 20000:
+        head = text[:10000]
+        tail = text[-10000:]
+        return head + "\n...[truncated]...\n" + tail
+    return text
+
+
+def write_text(path_str: str, content: str) -> str:
+    path = Path(path_str)
+    path_text = path_str.strip()
+    if (
+        not path_text
+        or path_text.startswith("```")
+        or path_text.startswith("#!")
+        or path_text.startswith("import ")
+        or path_text.startswith("from ")
+        or path_text.startswith("def ")
+        or path_text.startswith("class ")
+        or "\n" in path_text
+        or path_text in {"python", "bash", "json", "yaml", "text"}
+        or re.search(r"\s", path_text)
+        or not re.fullmatch(r"[/A-Za-z0-9._-]+", path_text)
+    ):
+        return "ERROR: write_file requires the first line to be a valid file path, not a code fence or language tag."
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content, encoding="utf-8")
+        return f"OK: wrote {len(content)} bytes to {path}"
+    except Exception as exc:
+        return f"ERROR: unable to write {path}: {exc}"
+
+
+def run_bash(command: str, timeout_sec: int, max_output_chars: int) -> str:
+    normalized = " ".join(command.strip().split())
+    for pattern in SAFETY_PATTERNS:
+        if re.search(pattern, normalized):
+            return f"ERROR: blocked dangerous command: {normalized}"
+    try:
+        proc = subprocess.run(
+            command,
+            shell=True,
+            capture_output=True,
+            text=True,
+            timeout=timeout_sec,
+            executable="/bin/bash",
+            cwd="/root",
+        )
+    except subprocess.TimeoutExpired:
+        return f"ERROR: command timed out after {timeout_sec}s"
+    except Exception as exc:
+        return f"ERROR: command failed to start: {exc}"
+
+    stdout = proc.stdout or ""
+    stderr = proc.stderr or ""
+    combined = f"returncode={proc.returncode}\nSTDOUT:\n{stdout}\nSTDERR:\n{stderr}"
+    if len(combined) > max_output_chars:
+        head = combined[: max_output_chars // 2]
+        tail = combined[-max_output_chars // 2 :]
+        combined = head + "\n...[truncated]...\n" + tail
+    return combined
+
+
+def call_model(messages, model: str, timeout_sec: int) -> str:
+    payload = {
+        "model": model,
+        "messages": messages,
+        "temperature": 0.2,
+        "max_tokens": 300,
+    }
+    req = urllib.request.Request(
+        os.environ.get("OPENAI_API_BASE", "http://172.17.0.1:9100/v1").rstrip("/") + "/chat/completions",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {os.environ.get('OPENAI_API_KEY', 'temp-key')}",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=timeout_sec) as resp:
+        body = json.loads(resp.read().decode("utf-8"))
+    return body["choices"][0]["message"]["content"]
+
+
+def parse_action(response: str):
+    if "Final Answer: DONE" in response:
+        return {"type": "final"}
+    cleaned = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL).strip()
+    if "</think>" in cleaned:
+        cleaned = cleaned.split("</think>")[-1].strip()
+    pattern = re.compile(
+        r"^Action:\s*(read_file|write_file|bash)\s*$\s*^Action Input:\s*$\s*(.*?)(?=^(Thought:|Action:|Observation:|Final Answer:)|\Z)",
+        flags=re.MULTILINE | re.DOTALL,
+    )
+    match = pattern.search(cleaned)
+    if not match:
+        return {"type": "error", "message": "Missing Action line."}
+    tool = match.group(1).strip()
+    tool_input = match.group(2).rstrip()
+    return {"type": "tool", "tool": tool, "input": tool_input}
+
+
+def format_observation(text: str) -> str:
+    return text if text else "(empty)"
+
+
+def main():
+    args = parse_args()
+    instruction = read_text(args.instruction_file)
+    initial_fs = run_bash("ls -R /root", timeout_sec=args.bash_timeout, max_output_chars=args.max_output_chars)
+
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {
+            "role": "user",
+            "content": textwrap.dedent(
+                f"""\
+                Initial observation from read_file(/root/instruction.md):
+                {instruction}
+
+                Initial observation from bash(ls -R /root):
+                {initial_fs}
+
+                Continue from these observations. Identify the required outputs, write code, run it, fix errors, and iterate until the task is satisfied.
+                """
+            ),
+        },
+    ]
+
+    print(f"MODEL CALL CONFIG: model={args.model} max_steps={args.max_steps}", flush=True)
+    for step in range(1, args.max_steps + 1):
+        print(f"\n=== STEP {step} ===", flush=True)
+        try:
+            response = call_model(messages, model=args.model, timeout_sec=args.llm_timeout)
+        except urllib.error.HTTPError as exc:
+            body = exc.read().decode("utf-8", errors="replace")
+            print(f"MODEL CALL ERROR: HTTP {exc.code}\n{body}", flush=True)
+            return 1
+        except TimeoutError:
+            print("MODEL CALL WARNING: timed out, retrying once with the same context.", flush=True)
+            try:
+                response = call_model(messages, model=args.model, timeout_sec=args.llm_timeout)
+            except Exception as exc:
+                print(f"MODEL CALL ERROR: {exc}", flush=True)
+                return 1
+        except Exception as exc:
+            print(f"MODEL CALL ERROR: {exc}", flush=True)
+            return 1
+
+        print("MODEL CALL OK", flush=True)
+        print(response.rstrip(), flush=True)
+        messages.append({"role": "assistant", "content": response})
+
+        parsed = parse_action(response)
+        if parsed["type"] == "final":
+            print("Final Answer: DONE", flush=True)
+            return 0
+
+        if parsed["type"] == "error":
+            observation = f"FORMAT ERROR: {parsed['message']}"
+        elif parsed["tool"] == "read_file":
+            observation = read_text(parsed["input"].strip())
+        elif parsed["tool"] == "write_file":
+            tool_input = parsed["input"]
+            if "\n" not in tool_input:
+                observation = "ERROR: write_file expects the first line to be a path and the remaining lines to be file content."
+            else:
+                path_line, content = tool_input.split("\n", 1)
+                observation = write_text(path_line.strip(), content)
+        else:
+            observation = run_bash(parsed["input"], timeout_sec=args.bash_timeout, max_output_chars=args.max_output_chars)
+
+        observation_block = (
+            "Observation:\n"
+            + format_observation(observation)
+            + "\n\nReminder: continue iterating until the required outputs are created and validated."
+        )
+        print(observation_block, flush=True)
+        messages.append({"role": "user", "content": observation_block})
+
+    print(f"NOTICE: max step limit {args.max_steps} reached.", flush=True)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+PY
+
+chmod +x /installed-agent/minimal_tool_agent_runner.py
+python3 --version
+/installed-agent/minimal_tool_agent_runner.py --help >/dev/null

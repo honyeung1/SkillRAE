@@ -1,0 +1,1658 @@
+[
+  {
+    "skill_name": "mesh-analysis",
+    "original_name": "mesh-analysis",
+    "original_task": "unknown_task",
+    "original_path": "<repo-root>/jobs/2026-02-26__10-42-15/3d-scan-calc__zkbem42/agent/sessions/skills/mesh-analysis",
+    "hash": "ee52c76c64a04af54251607eb8889e17",
+    "file_size": 2230
+  },
+  {
+    "skill_name": "docs-to-skill",
+    "original_name": "docs-to-skill",
+    "original_task": "unknown_task",
+    "original_path": "<repo-root>/.claude/skills/docs-to-skill",
+    "hash": "2a868e241c2b901b4296627627402d6e",
+    "file_size": 2974
+  },
+  {
+    "skill_name": "skill-creator",
+    "original_name": "skill-creator",
+    "original_task": "unknown_task",
+    "original_path": "<repo-root>/.claude/skills/skill-creator",
+    "hash": "b67fed4d1f7aea8cbb95d7fc9176faee",
+    "file_size": 17837
+  },
+  {
+    "skill_name": "harbor",
+    "original_name": "harbor",
+    "original_task": "unknown_task",
+    "original_path": "<repo-root>/.claude/skills/harbor",
+    "hash": "6a1c716bb07bdf30c4b08a9a4989fba7",
+    "file_size": 3531
+  },
+  {
+    "skill_name": "skillsbench",
+    "original_name": "skillsbench",
+    "original_task": "unknown_task",
+    "original_path": "<repo-root>/.claude/skills/skillsbench",
+    "hash": "3a94035b90e7bdf0a6782b125be4b39d",
+    "file_size": 2191
+  },
+  {
+    "skill_name": "gpt-multimodal",
+    "original_name": "gpt-multimodal",
+    "original_task": "pedestrian-traffic-counting",
+    "original_path": "<repo-root>/tasks-no-skills/pedestrian-traffic-counting/environment/skills/gpt-multimodal",
+    "hash": "2cb4fec72e681847c5cd89ac2ce5ef44",
+    "file_size": 19499
+  },
+  {
+    "skill_name": "gemini-count-in-video",
+    "original_name": "gemini-count-in-video",
+    "original_task": "pedestrian-traffic-counting",
+    "original_path": "<repo-root>/tasks-no-skills/pedestrian-traffic-counting/environment/skills/gemini-count-in-video",
+    "hash": "d488f5bd892b3338d588a1f874cb22a0",
+    "file_size": 10789
+  },
+  {
+    "skill_name": "video-frame-extraction",
+    "original_name": "video-frame-extraction",
+    "original_task": "pedestrian-traffic-counting",
+    "original_path": "<repo-root>/tasks-no-skills/pedestrian-traffic-counting/environment/skills/video-frame-extraction",
+    "hash": "a2a4759568dab34297680ab6b0a7ce96",
+    "file_size": 14016
+  },
+  {
+    "skill_name": "gemini-video-understanding",
+    "original_name": "gemini-video-understanding",
+    "original_task": "pedestrian-traffic-counting",
+    "original_path": "<repo-root>/tasks-no-skills/pedestrian-traffic-counting/environment/skills/gemini-video-understanding",
+    "hash": "b9d371df27525b6504e8a0cb72bd057d",
+    "file_size": 9596
+  },
+  {
+    "skill_name": "automatic-speech-recognition",
+    "original_name": "automatic-speech-recognition",
+    "original_task": "speaker-diarization-subtitles",
+    "original_path": "<repo-root>/tasks-no-skills/speaker-diarization-subtitles/environment/skills/automatic-speech-recognition",
+    "hash": "9805b8cf0295981c630026837ae1a3eb",
+    "file_size": 5444
+  },
+  {
+    "skill_name": "voice-activity-detection",
+    "original_name": "voice-activity-detection",
+    "original_task": "speaker-diarization-subtitles",
+    "original_path": "<repo-root>/tasks-no-skills/speaker-diarization-subtitles/environment/skills/voice-activity-detection",
+    "hash": "ee797fafc83f769e3214e8b6b8534740",
+    "file_size": 4655
+  },
+  {
+    "skill_name": "speaker-clustering",
+    "original_name": "speaker-clustering",
+    "original_task": "speaker-diarization-subtitles",
+    "original_path": "<repo-root>/tasks-no-skills/speaker-diarization-subtitles/environment/skills/speaker-clustering",
+    "hash": "bdf0123c8116a38e8b872c2eb67cd280",
+    "file_size": 7657
+  },
+  {
+    "skill_name": "multimodal-fusion",
+    "original_name": "multimodal-fusion",
+    "original_task": "speaker-diarization-subtitles",
+    "original_path": "<repo-root>/tasks-no-skills/speaker-diarization-subtitles/environment/skills/multimodal-fusion",
+    "hash": "86f8f5f76f3e3b9a262980447642d540",
+    "file_size": 7274
+  },
+  {
+    "skill_name": "threejs",
+    "original_name": "threejs",
+    "original_task": "threejs-structure-parser",
+    "original_path": "<repo-root>/tasks-no-skills/threejs-structure-parser/environment/skills/threejs",
+    "hash": "c299a8590252e37ccfa1fe988c25da97",
+    "file_size": 3266
+  },
+  {
+    "skill_name": "obj-exporter",
+    "original_name": "obj-exporter",
+    "original_task": "threejs-structure-parser",
+    "original_path": "<repo-root>/tasks-no-skills/threejs-structure-parser/environment/skills/obj-exporter",
+    "hash": "dca1716f26f149b0e6b167cf019526aa",
+    "file_size": 4576
+  },
+  {
+    "skill_name": "lab-unit-harmonization",
+    "original_name": "lab-unit-harmonization",
+    "original_task": "lab-unit-harmonization",
+    "original_path": "<repo-root>/tasks-no-skills/lab-unit-harmonization/environment/skills/lab-unit-harmonization",
+    "hash": "44bcdfb5229d0e3bfbf2b14c586098eb",
+    "file_size": 10764
+  },
+  {
+    "skill_name": "mhc-algorithm",
+    "original_name": "mhc-algorithm",
+    "original_task": "mhc-layer-impl",
+    "original_path": "<repo-root>/tasks-no-skills/mhc-layer-impl/environment/skills/mhc-algorithm",
+    "hash": "2944c10542c5fe67e4dff80694cf67c6",
+    "file_size": 4113
+  },
+  {
+    "skill_name": "modal-gpu",
+    "original_name": "modal-gpu",
+    "original_task": "mhc-layer-impl",
+    "original_path": "<repo-root>/tasks-no-skills/mhc-layer-impl/environment/skills/modal-gpu",
+    "hash": "61766ddba9afedc345f25a20494a021b",
+    "file_size": 2628
+  },
+  {
+    "skill_name": "nanogpt-training",
+    "original_name": "nanogpt-training",
+    "original_task": "mhc-layer-impl",
+    "original_path": "<repo-root>/tasks-no-skills/mhc-layer-impl/environment/skills/nanogpt-training",
+    "hash": "bb4ca4e684c826170b8c5f1465d14f71",
+    "file_size": 3527
+  },
+  {
+    "skill_name": "syzkaller-build-loop",
+    "original_name": "syzkaller-build-loop",
+    "original_task": "syzkaller-ppdev-syzlang",
+    "original_path": "<repo-root>/tasks-no-skills/syzkaller-ppdev-syzlang/environment/skills/syzkaller-build-loop",
+    "hash": "0ebc7fd6fadae0c4e382bab98deae03c",
+    "file_size": 1824
+  },
+  {
+    "skill_name": "syz-extract-constants",
+    "original_name": "syz-extract-constants",
+    "original_task": "syzkaller-ppdev-syzlang",
+    "original_path": "<repo-root>/tasks-no-skills/syzkaller-ppdev-syzlang/environment/skills/syz-extract-constants",
+    "hash": "0e5463c2de8781f703bd0b3aac19bb74",
+    "file_size": 3136
+  },
+  {
+    "skill_name": "syzlang-ioctl-basics",
+    "original_name": "syzlang-ioctl-basics",
+    "original_task": "syzkaller-ppdev-syzlang",
+    "original_path": "<repo-root>/tasks-no-skills/syzkaller-ppdev-syzlang/environment/skills/syzlang-ioctl-basics",
+    "hash": "6fea92dd1d8fc5a5ce2afad92b5b79bc",
+    "file_size": 2125
+  },
+  {
+    "skill_name": "pdf",
+    "original_name": "pdf",
+    "original_task": "financial-modeling-qa",
+    "original_path": "<repo-root>/tasks-no-skills/financial-modeling-qa/environment/skills/pdf",
+    "hash": "2fd15a918e558060f3dfa8ec979ba08e",
+    "file_size": 7068
+  },
+  {
+    "skill_name": "xlsx",
+    "original_name": "xlsx",
+    "original_task": "financial-modeling-qa",
+    "original_path": "<repo-root>/tasks-no-skills/financial-modeling-qa/environment/skills/xlsx",
+    "hash": "bfb65175a34c49d97109a02d15139479",
+    "file_size": 10632
+  },
+  {
+    "skill_name": "audiobook",
+    "original_name": "audiobook",
+    "original_task": "pg-essay-to-audiobook",
+    "original_path": "<repo-root>/tasks-no-skills/pg-essay-to-audiobook/environment/skills/audiobook",
+    "hash": "bccdd2f759bed2304434597003ec1854",
+    "file_size": 9607
+  },
+  {
+    "skill_name": "gtts",
+    "original_name": "gtts",
+    "original_task": "pg-essay-to-audiobook",
+    "original_path": "<repo-root>/tasks-no-skills/pg-essay-to-audiobook/environment/skills/gtts",
+    "hash": "c6410b393517ea0b1863fb75b612af62",
+    "file_size": 3378
+  },
+  {
+    "skill_name": "openai-tts",
+    "original_name": "openai-tts",
+    "original_task": "pg-essay-to-audiobook",
+    "original_path": "<repo-root>/tasks-no-skills/pg-essay-to-audiobook/environment/skills/openai-tts",
+    "hash": "d4b6bae14a14192499dd3bead86b74b9",
+    "file_size": 3783
+  },
+  {
+    "skill_name": "elevenlabs-tts",
+    "original_name": "elevenlabs-tts",
+    "original_task": "pg-essay-to-audiobook",
+    "original_path": "<repo-root>/tasks-no-skills/pg-essay-to-audiobook/environment/skills/elevenlabs-tts",
+    "hash": "22fee53507fe2f28c1a15ec29d6b2537",
+    "file_size": 2360
+  },
+  {
+    "skill_name": "contribution-analysis",
+    "original_name": "contribution-analysis",
+    "original_task": "lake-warming-attribution",
+    "original_path": "<repo-root>/tasks-no-skills/lake-warming-attribution/environment/skills/contribution-analysis",
+    "hash": "954a864f5b8045fb5618982d9e6dd3e9",
+    "file_size": 2959
+  },
+  {
+    "skill_name": "pca-decomposition",
+    "original_name": "pca-decomposition",
+    "original_task": "lake-warming-attribution",
+    "original_path": "<repo-root>/tasks-no-skills/lake-warming-attribution/environment/skills/pca-decomposition",
+    "hash": "ff5ba6d6b0157227d30fa140eacb0919",
+    "file_size": 3961
+  },
+  {
+    "skill_name": "meteorology-driver-classification",
+    "original_name": "meteorology-driver-classification",
+    "original_task": "lake-warming-attribution",
+    "original_path": "<repo-root>/tasks-no-skills/lake-warming-attribution/environment/skills/meteorology-driver-classification",
+    "hash": "3f4ca0923e60c4c8302cc5a8000d7f40",
+    "file_size": 1946
+  },
+  {
+    "skill_name": "trend-analysis",
+    "original_name": "trend-analysis",
+    "original_task": "lake-warming-attribution",
+    "original_path": "<repo-root>/tasks-no-skills/lake-warming-attribution/environment/skills/trend-analysis",
+    "hash": "7daeebcb985d01b98225e7be3f614d8d",
+    "file_size": 2788
+  },
+  {
+    "skill_name": "powerlifting-coef-calc_xlsx",
+    "original_name": "xlsx",
+    "original_task": "powerlifting-coef-calc",
+    "original_path": "<repo-root>/tasks-no-skills/powerlifting-coef-calc/environment/skills/xlsx",
+    "hash": "23ea20966e95066853a1740ff04d0dc2",
+    "file_size": 10631
+  },
+  {
+    "skill_name": "senior-data-scientist",
+    "original_name": "senior-data-scientist",
+    "original_task": "powerlifting-coef-calc",
+    "original_path": "<repo-root>/tasks-no-skills/powerlifting-coef-calc/environment/skills/senior-data-scientist",
+    "hash": "2fabfc754e452d8848da069c990701d4",
+    "file_size": 5630
+  },
+  {
+    "skill_name": "powerlifting",
+    "original_name": "powerlifting",
+    "original_task": "powerlifting-coef-calc",
+    "original_path": "<repo-root>/tasks-no-skills/powerlifting-coef-calc/environment/skills/powerlifting",
+    "hash": "3a87052aafefda3b0d6db0a337c629fc",
+    "file_size": 14910
+  },
+  {
+    "skill_name": "threat-detection",
+    "original_name": "threat-detection",
+    "original_task": "dapt-intrusion-detection",
+    "original_path": "<repo-root>/tasks-no-skills/dapt-intrusion-detection/environment/skills/threat-detection",
+    "hash": "02826df775caad6a9b53742681364627",
+    "file_size": 5136
+  },
+  {
+    "skill_name": "pcap-analysis",
+    "original_name": "pcap-analysis",
+    "original_task": "dapt-intrusion-detection",
+    "original_path": "<repo-root>/tasks-no-skills/dapt-intrusion-detection/environment/skills/pcap-analysis",
+    "hash": "862863dae4443204d5a5335d6234b091",
+    "file_size": 15020
+  },
+  {
+    "skill_name": "senior-java",
+    "original_name": "senior-java",
+    "original_task": "fix-druid-loophole-cve",
+    "original_path": "<repo-root>/tasks-no-skills/fix-druid-loophole-cve/environment/skills/senior-java",
+    "hash": "bb0963464682350350a52b7916f45631",
+    "file_size": 20215
+  },
+  {
+    "skill_name": "jackson-security",
+    "original_name": "jackson-security",
+    "original_task": "fix-druid-loophole-cve",
+    "original_path": "<repo-root>/tasks-no-skills/fix-druid-loophole-cve/environment/skills/jackson-security",
+    "hash": "a8819cd0e606ced6cf43e95f80f80105",
+    "file_size": 4182
+  },
+  {
+    "skill_name": "yaml-config",
+    "original_name": "yaml-config",
+    "original_task": "adaptive-cruise-control",
+    "original_path": "<repo-root>/tasks-no-skills/adaptive-cruise-control/environment/skills/yaml-config",
+    "hash": "a2b50029d7dedd981274a50f608edbfd",
+    "file_size": 1580
+  },
+  {
+    "skill_name": "simulation-metrics",
+    "original_name": "simulation-metrics",
+    "original_task": "adaptive-cruise-control",
+    "original_path": "<repo-root>/tasks-no-skills/adaptive-cruise-control/environment/skills/simulation-metrics",
+    "hash": "29bc05a4662596d8811f342e6c512516",
+    "file_size": 2157
+  },
+  {
+    "skill_name": "csv-processing",
+    "original_name": "csv-processing",
+    "original_task": "adaptive-cruise-control",
+    "original_path": "<repo-root>/tasks-no-skills/adaptive-cruise-control/environment/skills/csv-processing",
+    "hash": "c80b9f1b3e9880a02613d1a90f7fc23f",
+    "file_size": 1819
+  },
+  {
+    "skill_name": "vehicle-dynamics",
+    "original_name": "vehicle-dynamics",
+    "original_task": "adaptive-cruise-control",
+    "original_path": "<repo-root>/tasks-no-skills/adaptive-cruise-control/environment/skills/vehicle-dynamics",
+    "hash": "fb3a676f48004af9a64e00f70655fbeb",
+    "file_size": 2261
+  },
+  {
+    "skill_name": "pid-controller",
+    "original_name": "pid-controller",
+    "original_task": "adaptive-cruise-control",
+    "original_path": "<repo-root>/tasks-no-skills/adaptive-cruise-control/environment/skills/pid-controller",
+    "hash": "6c0461387c33f7fa2d251b1878cf058e",
+    "file_size": 2690
+  },
+  {
+    "skill_name": "reflow_machine_maintenance_guidance",
+    "original_name": "reflow_machine_maintenance_guidance",
+    "original_task": "manufacturing-equipment-maintenance",
+    "original_path": "<repo-root>/tasks-no-skills/manufacturing-equipment-maintenance/environment/skills/reflow_machine_maintenance_guidance",
+    "hash": "a1ab25020fbb25ea5f7840d781a36392",
+    "file_size": 4663
+  },
+  {
+    "skill_name": "reflow-profile-compliance-toolkit",
+    "original_name": "reflow-profile-compliance-toolkit",
+    "original_task": "manufacturing-equipment-maintenance",
+    "original_path": "<repo-root>/tasks-no-skills/manufacturing-equipment-maintenance/environment/skills/reflow-profile-compliance-toolkit",
+    "hash": "34372b0113c438c075dd4f471523aec2",
+    "file_size": 7420
+  },
+  {
+    "skill_name": "power-flow-data",
+    "original_name": "power-flow-data",
+    "original_task": "energy-market-pricing",
+    "original_path": "<repo-root>/tasks-no-skills/energy-market-pricing/environment/skills/power-flow-data",
+    "hash": "1306c0c1a6eeabda732c446156671aa9",
+    "file_size": 4367
+  },
+  {
+    "skill_name": "locational-marginal-prices",
+    "original_name": "locational-marginal-prices",
+    "original_task": "energy-market-pricing",
+    "original_path": "<repo-root>/tasks-no-skills/energy-market-pricing/environment/skills/locational-marginal-prices",
+    "hash": "93475bc84c25273772fb01cc4cd29c70",
+    "file_size": 4746
+  },
+  {
+    "skill_name": "dc-power-flow",
+    "original_name": "dc-power-flow",
+    "original_task": "energy-market-pricing",
+    "original_path": "<repo-root>/tasks-no-skills/energy-market-pricing/environment/skills/dc-power-flow",
+    "hash": "99af7b98e25e4f2eda90ba9dd6f0be35",
+    "file_size": 2882
+  },
+  {
+    "skill_name": "economic-dispatch",
+    "original_name": "economic-dispatch",
+    "original_task": "energy-market-pricing",
+    "original_path": "<repo-root>/tasks-no-skills/energy-market-pricing/environment/skills/economic-dispatch",
+    "hash": "ec6fb59f8fe155142cd303994fd17ad6",
+    "file_size": 4932
+  },
+  {
+    "skill_name": "speech-to-text",
+    "original_name": "speech-to-text",
+    "original_task": "video-tutorial-indexer",
+    "original_path": "<repo-root>/tasks-no-skills/video-tutorial-indexer/environment/skills/speech-to-text",
+    "hash": "79992aa88f7116b782902e731692db4b",
+    "file_size": 487
+  },
+  {
+    "skill_name": "manufacturing-failure-reason-codebook-normalization",
+    "original_name": "manufacturing-failure-reason-codebook-normalization",
+    "original_task": "manufacturing-codebook-normalization",
+    "original_path": "<repo-root>/tasks-no-skills/manufacturing-codebook-normalization/environment/skills/manufacturing-failure-reason-codebook-normalization",
+    "hash": "85b856848b7eaae31745e1ab73a32320",
+    "file_size": 4475
+  },
+  {
+    "skill_name": "maven-dependency-management",
+    "original_name": "maven-dependency-management",
+    "original_task": "fix-build-google-auto",
+    "original_path": "<repo-root>/tasks-no-skills/fix-build-google-auto/environment/skills/maven-dependency-management",
+    "hash": "522f192119afd8eb67d01b9b9c802219",
+    "file_size": 12272
+  },
+  {
+    "skill_name": "maven-build-lifecycle",
+    "original_name": "maven-build-lifecycle",
+    "original_task": "fix-build-google-auto",
+    "original_path": "<repo-root>/tasks-no-skills/fix-build-google-auto/environment/skills/maven-build-lifecycle",
+    "hash": "684aa0af8eabbd63ed667c576b9ce764",
+    "file_size": 11521
+  },
+  {
+    "skill_name": "maven-plugin-configuration",
+    "original_name": "maven-plugin-configuration",
+    "original_task": "fix-build-google-auto",
+    "original_path": "<repo-root>/tasks-no-skills/fix-build-google-auto/environment/skills/maven-plugin-configuration",
+    "hash": "825f692b43b3dabbc6b7b2c394a04fb2",
+    "file_size": 19193
+  },
+  {
+    "skill_name": "pcap-triage-tshark",
+    "original_name": "pcap-triage-tshark",
+    "original_task": "suricata-custom-exfil",
+    "original_path": "<repo-root>/tasks-no-skills/suricata-custom-exfil/environment/skills/pcap-triage-tshark",
+    "hash": "113d2ef590ef5f7e17816c4f07843b9a",
+    "file_size": 1309
+  },
+  {
+    "skill_name": "suricata-rules-basics",
+    "original_name": "suricata-rules-basics",
+    "original_task": "suricata-custom-exfil",
+    "original_path": "<repo-root>/tasks-no-skills/suricata-custom-exfil/environment/skills/suricata-rules-basics",
+    "hash": "43d2d205d04ff1d961ef666273f1a513",
+    "file_size": 3429
+  },
+  {
+    "skill_name": "suricata-offline-evejson",
+    "original_name": "suricata-offline-evejson",
+    "original_task": "suricata-custom-exfil",
+    "original_path": "<repo-root>/tasks-no-skills/suricata-custom-exfil/environment/skills/suricata-offline-evejson",
+    "hash": "4bd9cd48f643b53da98c9d511323de92",
+    "file_size": 1913
+  },
+  {
+    "skill_name": "python-scala-syntax-mapping",
+    "original_name": "python-scala-syntax-mapping",
+    "original_task": "python-scala-translation",
+    "original_path": "<repo-root>/tasks-no-skills/python-scala-translation/environment/skills/python-scala-syntax-mapping",
+    "hash": "7fb90292ec0af762bb5fe0aa22e47326",
+    "file_size": 4050
+  },
+  {
+    "skill_name": "python-scala-collections",
+    "original_name": "python-scala-collections",
+    "original_task": "python-scala-translation",
+    "original_path": "<repo-root>/tasks-no-skills/python-scala-translation/environment/skills/python-scala-collections",
+    "hash": "86e5294ba390fcd8a1cf7423fb7dc9d2",
+    "file_size": 6394
+  },
+  {
+    "skill_name": "python-scala-libraries",
+    "original_name": "python-scala-libraries",
+    "original_task": "python-scala-translation",
+    "original_path": "<repo-root>/tasks-no-skills/python-scala-translation/environment/skills/python-scala-libraries",
+    "hash": "02afc80c30962c67d9f8c8b0a561ebdb",
+    "file_size": 8947
+  },
+  {
+    "skill_name": "python-scala-functional",
+    "original_name": "python-scala-functional",
+    "original_task": "python-scala-translation",
+    "original_path": "<repo-root>/tasks-no-skills/python-scala-translation/environment/skills/python-scala-functional",
+    "hash": "ac0b3124886f097ab121335a3ca10eab",
+    "file_size": 7983
+  },
+  {
+    "skill_name": "python-scala-idioms",
+    "original_name": "python-scala-idioms",
+    "original_task": "python-scala-translation",
+    "original_path": "<repo-root>/tasks-no-skills/python-scala-translation/environment/skills/python-scala-idioms",
+    "hash": "1891aac65a29d9f8fa443746f3fdad2e",
+    "file_size": 7510
+  },
+  {
+    "skill_name": "python-scala-oop",
+    "original_name": "python-scala-oop",
+    "original_task": "python-scala-translation",
+    "original_path": "<repo-root>/tasks-no-skills/python-scala-translation/environment/skills/python-scala-oop",
+    "hash": "dd55bfd75f22cc12a455c0f7599f02a8",
+    "file_size": 7605
+  },
+  {
+    "skill_name": "pddl-skills",
+    "original_name": "pddl-skills",
+    "original_task": "pddl-tpp-planning",
+    "original_path": "<repo-root>/tasks-no-skills/pddl-tpp-planning/environment/skills/pddl-skills",
+    "hash": "bccc528fa445e2da7312500b040f51c5",
+    "file_size": 3095
+  },
+  {
+    "skill_name": "erlang-otp-behaviors",
+    "original_name": "erlang-otp-behaviors",
+    "original_task": "fix-erlang-ssh-cve",
+    "original_path": "<repo-root>/tasks-no-skills/fix-erlang-ssh-cve/environment/skills/erlang-otp-behaviors",
+    "hash": "589907f38997c273628a5a18b2997279",
+    "file_size": 17914
+  },
+  {
+    "skill_name": "find-bugs",
+    "original_name": "find-bugs",
+    "original_task": "fix-erlang-ssh-cve",
+    "original_path": "<repo-root>/tasks-no-skills/fix-erlang-ssh-cve/environment/skills/find-bugs",
+    "hash": "6d64e262a36e3d9f54b185eaca7cefec",
+    "file_size": 2767
+  },
+  {
+    "skill_name": "erlang-concurrency",
+    "original_name": "erlang-concurrency",
+    "original_task": "fix-erlang-ssh-cve",
+    "original_path": "<repo-root>/tasks-no-skills/fix-erlang-ssh-cve/environment/skills/erlang-concurrency",
+    "hash": "11c9601506f09ccd1d1556e579470fe7",
+    "file_size": 8540
+  },
+  {
+    "skill_name": "erlang-distribution",
+    "original_name": "erlang-distribution",
+    "original_task": "fix-erlang-ssh-cve",
+    "original_path": "<repo-root>/tasks-no-skills/fix-erlang-ssh-cve/environment/skills/erlang-distribution",
+    "hash": "5f177c50ef85d41afc03200cef436ba3",
+    "file_size": 13301
+  },
+  {
+    "skill_name": "ssh-penetration-testing",
+    "original_name": "ssh-penetration-testing",
+    "original_task": "fix-erlang-ssh-cve",
+    "original_path": "<repo-root>/tasks-no-skills/fix-erlang-ssh-cve/environment/skills/ssh-penetration-testing",
+    "hash": "befc5476dc1cab881922293453988f94",
+    "file_size": 11880
+  },
+  {
+    "skill_name": "senior-security",
+    "original_name": "senior-security",
+    "original_task": "fix-erlang-ssh-cve",
+    "original_path": "<repo-root>/tasks-no-skills/fix-erlang-ssh-cve/environment/skills/senior-security",
+    "hash": "02800908d84e9e88df9cd5547f983633",
+    "file_size": 4530
+  },
+  {
+    "skill_name": "timeseries-detrending",
+    "original_name": "timeseries-detrending",
+    "original_task": "econ-detrending-correlation",
+    "original_path": "<repo-root>/tasks-no-skills/econ-detrending-correlation/environment/skills/timeseries-detrending",
+    "hash": "f97a0f50fd912b27e524af834b6cb189",
+    "file_size": 4658
+  },
+  {
+    "skill_name": "sampling-and-indexing",
+    "original_name": "sampling-and-indexing",
+    "original_task": "dynamic-object-aware-egomotion",
+    "original_path": "<repo-root>/tasks-no-skills/dynamic-object-aware-egomotion/environment/skills/sampling-and-indexing",
+    "hash": "774d51effec07d4a78de120dff2aef0d",
+    "file_size": 1479
+  },
+  {
+    "skill_name": "output-validation",
+    "original_name": "output-validation",
+    "original_task": "dynamic-object-aware-egomotion",
+    "original_path": "<repo-root>/tasks-no-skills/dynamic-object-aware-egomotion/environment/skills/output-validation",
+    "hash": "79aff33d9851048dc2c6deed348cea43",
+    "file_size": 1847
+  },
+  {
+    "skill_name": "dyn-object-masks",
+    "original_name": "dyn-object-masks",
+    "original_task": "dynamic-object-aware-egomotion",
+    "original_path": "<repo-root>/tasks-no-skills/dynamic-object-aware-egomotion/environment/skills/dyn-object-masks",
+    "hash": "f37bea5fd3f310d881c29f2fe503d89d",
+    "file_size": 2068
+  },
+  {
+    "skill_name": "egomotion-estimation",
+    "original_name": "egomotion-estimation",
+    "original_task": "dynamic-object-aware-egomotion",
+    "original_path": "<repo-root>/tasks-no-skills/dynamic-object-aware-egomotion/environment/skills/egomotion-estimation",
+    "hash": "426e24f53960ebe386183019952e84bc",
+    "file_size": 2006
+  },
+  {
+    "skill_name": "casadi-ipopt-nlp",
+    "original_name": "casadi-ipopt-nlp",
+    "original_task": "energy-ac-optimal-power-flow",
+    "original_path": "<repo-root>/tasks-no-skills/energy-ac-optimal-power-flow/environment/skills/casadi-ipopt-nlp",
+    "hash": "64e920c133e52972fa5df9bf68725b13",
+    "file_size": 4928
+  },
+  {
+    "skill_name": "ac-branch-pi-model",
+    "original_name": "ac-branch-pi-model",
+    "original_task": "energy-ac-optimal-power-flow",
+    "original_path": "<repo-root>/tasks-no-skills/energy-ac-optimal-power-flow/environment/skills/ac-branch-pi-model",
+    "hash": "e4f98fa52e67919b324a6ebfe3b40ba4",
+    "file_size": 4298
+  },
+  {
+    "skill_name": "nlp-research-repo-package-installment",
+    "original_name": "nlp-research-repo-package-installment",
+    "original_task": "simpo-code-reproduction",
+    "original_path": "<repo-root>/tasks-no-skills/simpo-code-reproduction/environment/skills/nlp-research-repo-package-installment",
+    "hash": "a29d669a754dfd9b4cf269db2cf09b7b",
+    "file_size": 2032
+  },
+  {
+    "skill_name": "react-best-practices",
+    "original_name": "react-best-practices",
+    "original_task": "react-performance-debugging",
+    "original_path": "<repo-root>/tasks-no-skills/react-performance-debugging/environment/skills/react-best-practices",
+    "hash": "27128df03375b95c9485e2487141dd56",
+    "file_size": 5364
+  },
+  {
+    "skill_name": "browser-testing",
+    "original_name": "browser-testing",
+    "original_task": "react-performance-debugging",
+    "original_path": "<repo-root>/tasks-no-skills/react-performance-debugging/environment/skills/browser-testing",
+    "hash": "497109c7ac499d983043d79fec005939",
+    "file_size": 6424
+  },
+  {
+    "skill_name": "pptx",
+    "original_name": "pptx",
+    "original_task": "exceltable-in-ppt",
+    "original_path": "<repo-root>/tasks-no-skills/exceltable-in-ppt/environment/skills/pptx",
+    "hash": "65ea83f0016522414731b80548692635",
+    "file_size": 25552
+  },
+  {
+    "skill_name": "azure-bgp",
+    "original_name": "azure-bgp",
+    "original_task": "azure-bgp-oscillation-route-leak",
+    "original_path": "<repo-root>/tasks-no-skills/azure-bgp-oscillation-route-leak/environment/skills/azure-bgp",
+    "hash": "642367980567e3391b7052ea8b6968ee",
+    "file_size": 9824
+  },
+  {
+    "skill_name": "memory-optimization",
+    "original_name": "memory-optimization",
+    "original_task": "parallel-tfidf-search",
+    "original_path": "<repo-root>/tasks-no-skills/parallel-tfidf-search/environment/skills/memory-optimization",
+    "hash": "682d1191f448d2d9b52e7556eae2d89e",
+    "file_size": 6012
+  },
+  {
+    "skill_name": "workload-balancing",
+    "original_name": "workload-balancing",
+    "original_task": "parallel-tfidf-search",
+    "original_path": "<repo-root>/tasks-no-skills/parallel-tfidf-search/environment/skills/workload-balancing",
+    "hash": "6fea485a0abf800f4e2e6fa2c6ced6df",
+    "file_size": 8341
+  },
+  {
+    "skill_name": "python-parallelization",
+    "original_name": "python-parallelization",
+    "original_task": "parallel-tfidf-search",
+    "original_path": "<repo-root>/tasks-no-skills/parallel-tfidf-search/environment/skills/python-parallelization",
+    "hash": "9a40029c07a48dd33034b8580c662b9d",
+    "file_size": 5491
+  },
+  {
+    "skill_name": "search-restaurants",
+    "original_name": "search-restaurants",
+    "original_task": "travel-planning",
+    "original_path": "<repo-root>/tasks-no-skills/travel-planning/environment/skills/search-restaurants",
+    "hash": "dcad84b06c0d7a56e1873311b12f0758",
+    "file_size": 447
+  },
+  {
+    "skill_name": "search-attractions",
+    "original_name": "search-attractions",
+    "original_task": "travel-planning",
+    "original_path": "<repo-root>/tasks-no-skills/travel-planning/environment/skills/search-attractions",
+    "hash": "f1bb9adfa072e628bf264f33ca7c7a71",
+    "file_size": 451
+  },
+  {
+    "skill_name": "search-cities",
+    "original_name": "search-cities",
+    "original_task": "travel-planning",
+    "original_path": "<repo-root>/tasks-no-skills/travel-planning/environment/skills/search-cities",
+    "hash": "0eea0d6096c918f874b9ed09782bfaf4",
+    "file_size": 478
+  },
+  {
+    "skill_name": "search-flights",
+    "original_name": "search-flights",
+    "original_task": "travel-planning",
+    "original_path": "<repo-root>/tasks-no-skills/travel-planning/environment/skills/search-flights",
+    "hash": "61033679f3b9351b62ed3cbd9c90c9db",
+    "file_size": 510
+  },
+  {
+    "skill_name": "search-driving-distance",
+    "original_name": "search-driving-distance",
+    "original_task": "travel-planning",
+    "original_path": "<repo-root>/tasks-no-skills/travel-planning/environment/skills/search-driving-distance",
+    "hash": "ee4bcb2cd6515b0cc76f99c946480b32",
+    "file_size": 579
+  },
+  {
+    "skill_name": "search-accommodations",
+    "original_name": "search-accommodations",
+    "original_task": "travel-planning",
+    "original_path": "<repo-root>/tasks-no-skills/travel-planning/environment/skills/search-accommodations",
+    "hash": "1524a0d3f1ed523aa4ae17e1a74dd4ff",
+    "file_size": 515
+  },
+  {
+    "skill_name": "find-topk-similiar-chemicals_pdf",
+    "original_name": "pdf",
+    "original_task": "find-topk-similiar-chemicals",
+    "original_path": "<repo-root>/tasks-no-skills/find-topk-similiar-chemicals/environment/skills/pdf",
+    "hash": "b6007fa94e5c08e05bde7af96446c00a",
+    "file_size": 9123
+  },
+  {
+    "skill_name": "pubchem-database",
+    "original_name": "pubchem-database",
+    "original_task": "find-topk-similiar-chemicals",
+    "original_path": "<repo-root>/tasks-no-skills/find-topk-similiar-chemicals/environment/skills/pubchem-database",
+    "hash": "dfced5d30815f1943391937157d7a30c",
+    "file_size": 17133
+  },
+  {
+    "skill_name": "rdkit",
+    "original_name": "rdkit",
+    "original_task": "find-topk-similiar-chemicals",
+    "original_path": "<repo-root>/tasks-no-skills/find-topk-similiar-chemicals/environment/skills/rdkit",
+    "hash": "f3a2f52b2f46ec31cb455b9cfa453b10",
+    "file_size": 20789
+  },
+  {
+    "skill_name": "image_editing",
+    "original_name": "image_editing",
+    "original_task": "mario-coin-counting",
+    "original_path": "<repo-root>/tasks-no-skills/mario-coin-counting/environment/skills/image_editing",
+    "hash": "52e175060f5219728679ee74c1c67787",
+    "file_size": 4327
+  },
+  {
+    "skill_name": "object_counter",
+    "original_name": "object_counter",
+    "original_task": "mario-coin-counting",
+    "original_path": "<repo-root>/tasks-no-skills/mario-coin-counting/environment/skills/object_counter",
+    "hash": "2270dc5b55150488e6baaccd373c7a92",
+    "file_size": 557
+  },
+  {
+    "skill_name": "ffmpeg",
+    "original_name": "ffmpeg",
+    "original_task": "mario-coin-counting",
+    "original_path": "<repo-root>/tasks-no-skills/mario-coin-counting/environment/skills/ffmpeg",
+    "hash": "79bed73d0f10b2d0ffddd96463ae199d",
+    "file_size": 1993
+  },
+  {
+    "skill_name": "enterprise-artifact-search",
+    "original_name": "enterprise-artifact-search",
+    "original_task": "enterprise-information-search",
+    "original_path": "<repo-root>/tasks-no-skills/enterprise-information-search/environment/skills/enterprise-artifact-search",
+    "hash": "114a5389db136383b60b9721bf1bdec4",
+    "file_size": 10126
+  },
+  {
+    "skill_name": "ffmpeg-video-filters",
+    "original_name": "ffmpeg-video-filters",
+    "original_task": "multilingual-video-dubbing",
+    "original_path": "<repo-root>/tasks-no-skills/multilingual-video-dubbing/environment/skills/ffmpeg-video-filters",
+    "hash": "f867841db4c933c60b4a5df6c3b32455",
+    "file_size": 3468
+  },
+  {
+    "skill_name": "ffmpeg-format-conversion",
+    "original_name": "ffmpeg-format-conversion",
+    "original_task": "multilingual-video-dubbing",
+    "original_path": "<repo-root>/tasks-no-skills/multilingual-video-dubbing/environment/skills/ffmpeg-format-conversion",
+    "hash": "c30d20fc846f3dd9b7c1cefe30d368d5",
+    "file_size": 2790
+  },
+  {
+    "skill_name": "ffmpeg-video-editing",
+    "original_name": "ffmpeg-video-editing",
+    "original_task": "multilingual-video-dubbing",
+    "original_path": "<repo-root>/tasks-no-skills/multilingual-video-dubbing/environment/skills/ffmpeg-video-editing",
+    "hash": "2cd9b7a796c61089a5efd90984ad96ad",
+    "file_size": 2509
+  },
+  {
+    "skill_name": "ffmpeg-audio-processing",
+    "original_name": "ffmpeg-audio-processing",
+    "original_task": "multilingual-video-dubbing",
+    "original_path": "<repo-root>/tasks-no-skills/multilingual-video-dubbing/environment/skills/ffmpeg-audio-processing",
+    "hash": "a69347573223c1360f724fb8bf93af60",
+    "file_size": 3836
+  },
+  {
+    "skill_name": "ffmpeg-media-info",
+    "original_name": "ffmpeg-media-info",
+    "original_task": "multilingual-video-dubbing",
+    "original_path": "<repo-root>/tasks-no-skills/multilingual-video-dubbing/environment/skills/ffmpeg-media-info",
+    "hash": "47e741bb48d8f2d87b2b96a41ff8e252",
+    "file_size": 2794
+  },
+  {
+    "skill_name": "text-to-speech",
+    "original_name": "text-to-speech",
+    "original_task": "multilingual-video-dubbing",
+    "original_path": "<repo-root>/tasks-no-skills/multilingual-video-dubbing/environment/skills/text-to-speech",
+    "hash": "c85bbcaf7ec7e2d9dc8dcbf64739fafd",
+    "file_size": 2335
+  },
+  {
+    "skill_name": "obspy-datacenter-client",
+    "original_name": "obspy-datacenter-client",
+    "original_task": "seismic-phase-picking",
+    "original_path": "<repo-root>/tasks-no-skills/seismic-phase-picking/environment/skills/obspy-datacenter-client",
+    "hash": "7550e79f23b82d40d7311c757b75f9e9",
+    "file_size": 4658
+  },
+  {
+    "skill_name": "seismic-picker-selection",
+    "original_name": "seismic-picker-selection",
+    "original_task": "seismic-phase-picking",
+    "original_path": "<repo-root>/tasks-no-skills/seismic-phase-picking/environment/skills/seismic-picker-selection",
+    "hash": "f164ba0350f4c0015c7834b069ebc1aa",
+    "file_size": 4109
+  },
+  {
+    "skill_name": "obspy-data-api",
+    "original_name": "obspy-data-api",
+    "original_task": "seismic-phase-picking",
+    "original_path": "<repo-root>/tasks-no-skills/seismic-phase-picking/environment/skills/obspy-data-api",
+    "hash": "78f34f6a74840d2d6079740e47935b2a",
+    "file_size": 5488
+  },
+  {
+    "skill_name": "seisbench-model-api",
+    "original_name": "seisbench-model-api",
+    "original_task": "seismic-phase-picking",
+    "original_path": "<repo-root>/tasks-no-skills/seismic-phase-picking/environment/skills/seisbench-model-api",
+    "hash": "c529e7902645a60416a76d041ddaa3d1",
+    "file_size": 7410
+  },
+  {
+    "skill_name": "excitation-signal-design",
+    "original_name": "excitation-signal-design",
+    "original_task": "hvac-control",
+    "original_path": "<repo-root>/tasks-no-skills/hvac-control/environment/skills/excitation-signal-design",
+    "hash": "2c0137e8c08aee8405503f43be6228af",
+    "file_size": 2569
+  },
+  {
+    "skill_name": "imc-tuning-rules",
+    "original_name": "imc-tuning-rules",
+    "original_task": "hvac-control",
+    "original_path": "<repo-root>/tasks-no-skills/hvac-control/environment/skills/imc-tuning-rules",
+    "hash": "9d6caf85c41be98aff0772e352028e1e",
+    "file_size": 3613
+  },
+  {
+    "skill_name": "scipy-curve-fit",
+    "original_name": "scipy-curve-fit",
+    "original_task": "hvac-control",
+    "original_path": "<repo-root>/tasks-no-skills/hvac-control/environment/skills/scipy-curve-fit",
+    "hash": "4182eb5246318a1c6da9a4a93b139a70",
+    "file_size": 4095
+  },
+  {
+    "skill_name": "safety-interlocks",
+    "original_name": "safety-interlocks",
+    "original_task": "hvac-control",
+    "original_path": "<repo-root>/tasks-no-skills/hvac-control/environment/skills/safety-interlocks",
+    "hash": "02901e560a19f341d0710a9341667873",
+    "file_size": 4114
+  },
+  {
+    "skill_name": "first-order-model-fitting",
+    "original_name": "first-order-model-fitting",
+    "original_task": "hvac-control",
+    "original_path": "<repo-root>/tasks-no-skills/hvac-control/environment/skills/first-order-model-fitting",
+    "hash": "76b23306c67bc0ce828793d87d90cdaf",
+    "file_size": 2606
+  },
+  {
+    "skill_name": "13f-analyzer",
+    "original_name": "13f-analyzer",
+    "original_task": "sec-financial-report",
+    "original_path": "<repo-root>/tasks-no-skills/sec-financial-report/environment/skills/13f-analyzer",
+    "hash": "bba2cdc5035038c238bdca91ba55aa1b",
+    "file_size": 1340
+  },
+  {
+    "skill_name": "fuzzy-name-search",
+    "original_name": "fuzzy-name-search",
+    "original_task": "sec-financial-report",
+    "original_path": "<repo-root>/tasks-no-skills/sec-financial-report/environment/skills/fuzzy-name-search",
+    "hash": "f95824fb277e3fe547be807e6de58928",
+    "file_size": 2383
+  },
+  {
+    "skill_name": "qutip",
+    "original_name": "qutip",
+    "original_task": "quantum-numerical-simulation",
+    "original_path": "<repo-root>/tasks-no-skills/quantum-numerical-simulation/environment/skills/qutip",
+    "hash": "c88c9d43eb06ed069b97c6804017eeb2",
+    "file_size": 9310
+  },
+  {
+    "skill_name": "dialogue_graph",
+    "original_name": "dialogue_graph",
+    "original_task": "dialogue-parser",
+    "original_path": "<repo-root>/tasks-no-skills/dialogue-parser/environment/skills/dialogue_graph",
+    "hash": "a48e7145b9aae056e5eee98eb3c32804",
+    "file_size": 2386
+  },
+  {
+    "skill_name": "constraint-parser",
+    "original_name": "constraint-parser",
+    "original_task": "scheduling-email-assistant",
+    "original_path": "<repo-root>/tasks-no-skills/scheduling-email-assistant/environment/skills/constraint-parser",
+    "hash": "a7b9fdee8dc7dd5d729aed71a2075d77",
+    "file_size": 596
+  },
+  {
+    "skill_name": "gmail-skill",
+    "original_name": "gmail-skill",
+    "original_task": "scheduling-email-assistant",
+    "original_path": "<repo-root>/tasks-no-skills/scheduling-email-assistant/environment/skills/gmail-skill",
+    "hash": "6729f70ec2d6a4a6ec3a86987d905e19",
+    "file_size": 4323
+  },
+  {
+    "skill_name": "lean4-memories",
+    "original_name": "lean4-memories",
+    "original_task": "lean4-proof",
+    "original_path": "<repo-root>/tasks-no-skills/lean4-proof/environment/skills/lean4-memories",
+    "hash": "291a05479a53a49e39a3952e12999a50",
+    "file_size": 12785
+  },
+  {
+    "skill_name": "lean4-theorem-proving",
+    "original_name": "lean4-theorem-proving",
+    "original_task": "lean4-proof",
+    "original_path": "<repo-root>/tasks-no-skills/lean4-proof/environment/skills/lean4-theorem-proving",
+    "hash": "bcc75d9ca0dfc942d8c6371a33c80959",
+    "file_size": 9006
+  },
+  {
+    "skill_name": "d3-visualization",
+    "original_name": "d3-visualization",
+    "original_task": "data-to-d3",
+    "original_path": "<repo-root>/tasks-no-skills/data-to-d3/environment/skills/d3-visualization",
+    "hash": "3ebf783e3332f0eb984b64c972689327",
+    "file_size": 6204
+  },
+  {
+    "skill_name": "fix-visual-stability_react-best-practices",
+    "original_name": "react-best-practices",
+    "original_task": "fix-visual-stability",
+    "original_path": "<repo-root>/tasks-no-skills/fix-visual-stability/environment/skills/react-best-practices",
+    "hash": "b48b8bd74726fe4834edf2c8d8441bb4",
+    "file_size": 5282
+  },
+  {
+    "skill_name": "web-interface-guidelines",
+    "original_name": "web-interface-guidelines",
+    "original_task": "fix-visual-stability",
+    "original_path": "<repo-root>/tasks-no-skills/fix-visual-stability/environment/skills/web-interface-guidelines",
+    "hash": "64802b3103ea7f7a47bb308f85f96fce",
+    "file_size": 2892
+  },
+  {
+    "skill_name": "fix-visual-stability_browser-testing",
+    "original_name": "browser-testing",
+    "original_task": "fix-visual-stability",
+    "original_path": "<repo-root>/tasks-no-skills/fix-visual-stability/environment/skills/browser-testing",
+    "hash": "2b92c74e6ae6401c51828758e9ca7f87",
+    "file_size": 6476
+  },
+  {
+    "skill_name": "gamma-phase-associator",
+    "original_name": "gamma-phase-associator",
+    "original_task": "earthquake-phase-association",
+    "original_path": "<repo-root>/tasks-no-skills/earthquake-phase-association/environment/skills/gamma-phase-associator",
+    "hash": "a9d69d94639a2f45e00f91e825d2e5a9",
+    "file_size": 10107
+  },
+  {
+    "skill_name": "spring-boot-migration",
+    "original_name": "spring-boot-migration",
+    "original_task": "spring-boot-jakarta-migration",
+    "original_path": "<repo-root>/tasks-no-skills/spring-boot-jakarta-migration/environment/skills/spring-boot-migration",
+    "hash": "10e50fdee478be66adf1faabed2768a4",
+    "file_size": 8735
+  },
+  {
+    "skill_name": "hibernate-upgrade",
+    "original_name": "hibernate-upgrade",
+    "original_task": "spring-boot-jakarta-migration",
+    "original_path": "<repo-root>/tasks-no-skills/spring-boot-jakarta-migration/environment/skills/hibernate-upgrade",
+    "hash": "ccc8b22d707c5607f278a33275f10ea3",
+    "file_size": 7507
+  },
+  {
+    "skill_name": "jakarta-namespace",
+    "original_name": "jakarta-namespace",
+    "original_task": "spring-boot-jakarta-migration",
+    "original_path": "<repo-root>/tasks-no-skills/spring-boot-jakarta-migration/environment/skills/jakarta-namespace",
+    "hash": "d0bf8b43a3218359cb61b97cca61a6fb",
+    "file_size": 7656
+  },
+  {
+    "skill_name": "restclient-migration",
+    "original_name": "restclient-migration",
+    "original_task": "spring-boot-jakarta-migration",
+    "original_path": "<repo-root>/tasks-no-skills/spring-boot-jakarta-migration/environment/skills/restclient-migration",
+    "hash": "aee6b4a5480f263e77acad761903dfbd",
+    "file_size": 8515
+  },
+  {
+    "skill_name": "spring-security-6",
+    "original_name": "spring-security-6",
+    "original_task": "spring-boot-jakarta-migration",
+    "original_path": "<repo-root>/tasks-no-skills/spring-boot-jakarta-migration/environment/skills/spring-security-6",
+    "hash": "ca02ad3e8a4e86d4116d42c53ef692a4",
+    "file_size": 12988
+  },
+  {
+    "skill_name": "planning-with-files",
+    "original_name": "planning-with-files",
+    "original_task": "organize-messy-files",
+    "original_path": "<repo-root>/tasks-no-skills/organize-messy-files/environment/skills/planning-with-files",
+    "hash": "c844c0565b1b8ae96f36b6716ab27257",
+    "file_size": 6681
+  },
+  {
+    "skill_name": "file-organizer",
+    "original_name": "file-organizer",
+    "original_task": "organize-messy-files",
+    "original_path": "<repo-root>/tasks-no-skills/organize-messy-files/environment/skills/file-organizer",
+    "hash": "a95fc5ae36cb2143af875baeb272c98e",
+    "file_size": 11175
+  },
+  {
+    "skill_name": "docx",
+    "original_name": "docx",
+    "original_task": "organize-messy-files",
+    "original_path": "<repo-root>/tasks-no-skills/organize-messy-files/environment/skills/docx",
+    "hash": "a08bb1fe7c4b7a98c656acea3e4b63b1",
+    "file_size": 10151
+  },
+  {
+    "skill_name": "fuzzing-python",
+    "original_name": "fuzzing-python",
+    "original_task": "setup-fuzzing-py",
+    "original_path": "<repo-root>/tasks-no-skills/setup-fuzzing-py/environment/skills/fuzzing-python",
+    "hash": "9efce58e4bfb83d671858c4927ba1231",
+    "file_size": 16925
+  },
+  {
+    "skill_name": "setup-env",
+    "original_name": "setup-env",
+    "original_task": "setup-fuzzing-py",
+    "original_path": "<repo-root>/tasks-no-skills/setup-fuzzing-py/environment/skills/setup-env",
+    "hash": "3702f0177432057877dc0354cf7bf72d",
+    "file_size": 1773
+  },
+  {
+    "skill_name": "discover-important-function",
+    "original_name": "discover-important-function",
+    "original_task": "setup-fuzzing-py",
+    "original_path": "<repo-root>/tasks-no-skills/setup-fuzzing-py/environment/skills/discover-important-function",
+    "hash": "4da16a0943c52bba29106d2f33b706f4",
+    "file_size": 14358
+  },
+  {
+    "skill_name": "pymatgen",
+    "original_name": "pymatgen",
+    "original_task": "crystallographic-wyckoff-position-analysis",
+    "original_path": "<repo-root>/tasks-no-skills/crystallographic-wyckoff-position-analysis/environment/skills/pymatgen",
+    "hash": "e3b3ba8be2964e42a3f3ccb4437131f2",
+    "file_size": 20854
+  },
+  {
+    "skill_name": "sympy",
+    "original_name": "sympy",
+    "original_task": "crystallographic-wyckoff-position-analysis",
+    "original_path": "<repo-root>/tasks-no-skills/crystallographic-wyckoff-position-analysis/environment/skills/sympy",
+    "hash": "3547588ce1e419788eb8ddb4756e2e2b",
+    "file_size": 14287
+  },
+  {
+    "skill_name": "filler-word-processing",
+    "original_name": "filler-word-processing",
+    "original_task": "video-filler-word-remover",
+    "original_path": "<repo-root>/tasks-no-skills/video-filler-word-remover/environment/skills/filler-word-processing",
+    "hash": "bc33d75630463442abb9e8cf9f623548",
+    "file_size": 4244
+  },
+  {
+    "skill_name": "whisper-transcription",
+    "original_name": "whisper-transcription",
+    "original_task": "video-filler-word-remover",
+    "original_path": "<repo-root>/tasks-no-skills/video-filler-word-remover/environment/skills/whisper-transcription",
+    "hash": "492c847286de80e3cf5c715e7f584817",
+    "file_size": 4542
+  },
+  {
+    "skill_name": "video-filler-word-remover_ffmpeg-video-editing",
+    "original_name": "ffmpeg-video-editing",
+    "original_task": "video-filler-word-remover",
+    "original_path": "<repo-root>/tasks-no-skills/video-filler-word-remover/environment/skills/ffmpeg-video-editing",
+    "hash": "2bc7e473a9f8106796e11b894e0db5b2",
+    "file_size": 3806
+  },
+  {
+    "skill_name": "geospatial-analysis",
+    "original_name": "geospatial-analysis",
+    "original_task": "earthquake-plate-calculation",
+    "original_path": "<repo-root>/tasks-no-skills/earthquake-plate-calculation/environment/skills/geospatial-analysis",
+    "hash": "00129cfb4d92fa9f28170f1537f333cd",
+    "file_size": 7543
+  },
+  {
+    "skill_name": "state-space-linearization",
+    "original_name": "state-space-linearization",
+    "original_task": "r2r-mpc-control",
+    "original_path": "<repo-root>/tasks-no-skills/r2r-mpc-control/environment/skills/state-space-linearization",
+    "hash": "112d6cb8af7c922660cc679d2b9bfe4a",
+    "file_size": 1018
+  },
+  {
+    "skill_name": "integral-action-design",
+    "original_name": "integral-action-design",
+    "original_task": "r2r-mpc-control",
+    "original_path": "<repo-root>/tasks-no-skills/r2r-mpc-control/environment/skills/integral-action-design",
+    "hash": "c6a5b9dbc916342d7b79fdb96154567b",
+    "file_size": 1104
+  },
+  {
+    "skill_name": "mpc-horizon-tuning",
+    "original_name": "mpc-horizon-tuning",
+    "original_task": "r2r-mpc-control",
+    "original_path": "<repo-root>/tasks-no-skills/r2r-mpc-control/environment/skills/mpc-horizon-tuning",
+    "hash": "364d225de67f55ce78e50a2a16885646",
+    "file_size": 1197
+  },
+  {
+    "skill_name": "finite-horizon-lqr",
+    "original_name": "finite-horizon-lqr",
+    "original_task": "r2r-mpc-control",
+    "original_path": "<repo-root>/tasks-no-skills/r2r-mpc-control/environment/skills/finite-horizon-lqr",
+    "hash": "46866a8aeda779f9112ab17d93fb122b",
+    "file_size": 1078
+  },
+  {
+    "skill_name": "threejs-to-obj_obj-exporter",
+    "original_name": "obj-exporter",
+    "original_task": "threejs-to-obj",
+    "original_path": "<repo-root>/tasks-no-skills/threejs-to-obj/environment/skills/obj-exporter",
+    "hash": "e7ad418de60dddcf64153bed1f4377be",
+    "file_size": 2055
+  },
+  {
+    "skill_name": "citation-management",
+    "original_name": "citation-management",
+    "original_task": "citation-check",
+    "original_path": "<repo-root>/tasks-no-skills/citation-check/environment/skills/citation-management",
+    "hash": "55449dc7ca926d035040d8ad23e7de83",
+    "file_size": 33415
+  },
+  {
+    "skill_name": "time_series_anomaly_detection",
+    "original_name": "time_series_anomaly_detection",
+    "original_task": "trend-anomaly-causal-inference",
+    "original_path": "<repo-root>/tasks-no-skills/trend-anomaly-causal-inference/environment/skills/time_series_anomaly_detection",
+    "hash": "009c47715fba195594e0eec0c8c048a5",
+    "file_size": 6173
+  },
+  {
+    "skill_name": "data_cleaning",
+    "original_name": "data_cleaning",
+    "original_task": "trend-anomaly-causal-inference",
+    "original_path": "<repo-root>/tasks-no-skills/trend-anomaly-causal-inference/environment/skills/data_cleaning",
+    "hash": "e366022cf8f1cd38064c57dd4620f07a",
+    "file_size": 4297
+  },
+  {
+    "skill_name": "did_causal_analysis",
+    "original_name": "did_causal_analysis",
+    "original_task": "trend-anomaly-causal-inference",
+    "original_path": "<repo-root>/tasks-no-skills/trend-anomaly-causal-inference/environment/skills/did_causal_analysis",
+    "hash": "dd292890302dc76558cef325c855c0fe",
+    "file_size": 5179
+  },
+  {
+    "skill_name": "feature_engineering",
+    "original_name": "feature_engineering",
+    "original_task": "trend-anomaly-causal-inference",
+    "original_path": "<repo-root>/tasks-no-skills/trend-anomaly-causal-inference/environment/skills/feature_engineering",
+    "hash": "dff0111d318649e383aef8d83c15665c",
+    "file_size": 5607
+  },
+  {
+    "skill_name": "academic-pdf-redaction",
+    "original_name": "academic-pdf-redaction",
+    "original_task": "paper-anonymizer",
+    "original_path": "<repo-root>/tasks-no-skills/paper-anonymizer/environment/skills/academic-pdf-redaction",
+    "hash": "0ff3620801f43792fc19e1f87f35157f",
+    "file_size": 3741
+  },
+  {
+    "skill_name": "usgs-data-download",
+    "original_name": "usgs-data-download",
+    "original_task": "flood-risk-analysis",
+    "original_path": "<repo-root>/tasks-no-skills/flood-risk-analysis/environment/skills/usgs-data-download",
+    "hash": "176afd9aaace22466c51ebac26f7085c",
+    "file_size": 3543
+  },
+  {
+    "skill_name": "nws-flood-thresholds",
+    "original_name": "nws-flood-thresholds",
+    "original_task": "flood-risk-analysis",
+    "original_path": "<repo-root>/tasks-no-skills/flood-risk-analysis/environment/skills/nws-flood-thresholds",
+    "hash": "943de1f3ba6db70a5f381a3be5ab402d",
+    "file_size": 4091
+  },
+  {
+    "skill_name": "flood-detection",
+    "original_name": "flood-detection",
+    "original_task": "flood-risk-analysis",
+    "original_path": "<repo-root>/tasks-no-skills/flood-risk-analysis/environment/skills/flood-detection",
+    "hash": "ce3c8350fd993b33f08e4b6f01ba141c",
+    "file_size": 3688
+  },
+  {
+    "skill_name": "matched-filtering",
+    "original_name": "matched-filtering",
+    "original_task": "gravitational-wave-detection",
+    "original_path": "<repo-root>/tasks-no-skills/gravitational-wave-detection/environment/skills/matched-filtering",
+    "hash": "7a06e34bed7d45c1da0a5a69212b046b",
+    "file_size": 6404
+  },
+  {
+    "skill_name": "conditioning",
+    "original_name": "conditioning",
+    "original_task": "gravitational-wave-detection",
+    "original_path": "<repo-root>/tasks-no-skills/gravitational-wave-detection/environment/skills/conditioning",
+    "hash": "38ab8d1b9420b7ed7dcd426bbcc5d565",
+    "file_size": 5373
+  },
+  {
+    "skill_name": "marker",
+    "original_name": "marker",
+    "original_task": "latex-formula-extraction",
+    "original_path": "<repo-root>/tasks-no-skills/latex-formula-extraction/environment/skills/marker",
+    "hash": "e731a18381e8f6f612a0e107e19f95c0",
+    "file_size": 2080
+  },
+  {
+    "skill_name": "glm-basics",
+    "original_name": "glm-basics",
+    "original_task": "glm-lake-mendota",
+    "original_path": "<repo-root>/tasks-no-skills/glm-lake-mendota/environment/skills/glm-basics",
+    "hash": "6089843f45a673d25c56fe91ef861345",
+    "file_size": 2158
+  },
+  {
+    "skill_name": "glm-calibration",
+    "original_name": "glm-calibration",
+    "original_task": "glm-lake-mendota",
+    "original_path": "<repo-root>/tasks-no-skills/glm-lake-mendota/environment/skills/glm-calibration",
+    "hash": "11b3957acec4e01fae92a635d6695f21",
+    "file_size": 3144
+  },
+  {
+    "skill_name": "glm-output",
+    "original_name": "glm-output",
+    "original_task": "glm-lake-mendota",
+    "original_path": "<repo-root>/tasks-no-skills/glm-lake-mendota/environment/skills/glm-output",
+    "hash": "e749f82a87606fb592fbf322111f7bfa",
+    "file_size": 4009
+  },
+  {
+    "skill_name": "hierarchical-taxonomy-clustering",
+    "original_name": "hierarchical-taxonomy-clustering",
+    "original_task": "taxonomy-tree-merge",
+    "original_path": "<repo-root>/tasks-no-skills/taxonomy-tree-merge/environment/skills/hierarchical-taxonomy-clustering",
+    "hash": "956bf5d3a02c837cc0e8ab773f2bf3cc",
+    "file_size": 3936
+  },
+  {
+    "skill_name": "gh-cli",
+    "original_name": "gh-cli",
+    "original_task": "gh-repo-analytics",
+    "original_path": "<repo-root>/tasks-no-skills/gh-repo-analytics/environment/skills/gh-cli",
+    "hash": "2967bc82520be866d93286832327c145",
+    "file_size": 6453
+  },
+  {
+    "skill_name": "temporal-python-testing",
+    "original_name": "temporal-python-testing",
+    "original_task": "fix-build-agentops",
+    "original_path": "<repo-root>/tasks-no-skills/fix-build-agentops/environment/skills/temporal-python-testing",
+    "hash": "29beb1c8a75160f49ff53408c4fcf2b0",
+    "file_size": 4937
+  },
+  {
+    "skill_name": "uv-package-manager",
+    "original_name": "uv-package-manager",
+    "original_task": "fix-build-agentops",
+    "original_path": "<repo-root>/tasks-no-skills/fix-build-agentops/environment/skills/uv-package-manager",
+    "hash": "696aa1c22b7e314f256c53425f04c34f",
+    "file_size": 16048
+  },
+  {
+    "skill_name": "testing-python",
+    "original_name": "testing-python",
+    "original_task": "fix-build-agentops",
+    "original_path": "<repo-root>/tasks-no-skills/fix-build-agentops/environment/skills/testing-python",
+    "hash": "84375eb7cf228caf37faab9ba953feb0",
+    "file_size": 5362
+  },
+  {
+    "skill_name": "analyze-ci",
+    "original_name": "analyze-ci",
+    "original_task": "fix-build-agentops",
+    "original_path": "<repo-root>/tasks-no-skills/fix-build-agentops/environment/skills/analyze-ci",
+    "hash": "7751c6d327081da149e05bfd94a3334c",
+    "file_size": 958
+  },
+  {
+    "skill_name": "jax-skills",
+    "original_name": "jax-skills",
+    "original_task": "jax-computing-basics",
+    "original_path": "<repo-root>/tasks-no-skills/jax-computing-basics/environment/skills/jax-skills",
+    "hash": "17e91977b897bde68e5618b255dbf52f",
+    "file_size": 4203
+  },
+  {
+    "skill_name": "senior-data-engineer",
+    "original_name": "senior-data-engineer",
+    "original_task": "flink-query",
+    "original_path": "<repo-root>/tasks-no-skills/flink-query/environment/skills/senior-data-engineer",
+    "hash": "7fe491b934624ee739b5308bb40ca57b",
+    "file_size": 23678
+  },
+  {
+    "skill_name": "fjsp-baseline-repair-with-downtime-and-policy",
+    "original_name": "fjsp-baseline-repair-with-downtime-and-policy",
+    "original_task": "manufacturing-fjsp-optimization",
+    "original_path": "<repo-root>/tasks-no-skills/manufacturing-fjsp-optimization/environment/skills/fjsp-baseline-repair-with-downtime-and-policy",
+    "hash": "0734dbd3c0f1d917e881b5fe613ee305",
+    "file_size": 4824
+  },
+  {
+    "skill_name": "sales-pivot-analysis_pdf",
+    "original_name": "pdf",
+    "original_task": "sales-pivot-analysis",
+    "original_path": "<repo-root>/tasks-no-skills/sales-pivot-analysis/environment/skills/pdf",
+    "hash": "6686b346fa31ea24c403b64ee7eddf6a",
+    "file_size": 6452
+  },
+  {
+    "skill_name": "sales-pivot-analysis_xlsx",
+    "original_name": "xlsx",
+    "original_task": "sales-pivot-analysis",
+    "original_path": "<repo-root>/tasks-no-skills/sales-pivot-analysis/environment/skills/xlsx",
+    "hash": "34033b086efaeabd21bdbf4d0496b886",
+    "file_size": 7845
+  },
+  {
+    "skill_name": "civ6lib",
+    "original_name": "civ6lib",
+    "original_task": "civ6-adjacency-optimizer",
+    "original_path": "<repo-root>/tasks-no-skills/civ6-adjacency-optimizer/environment/skills/civ6lib",
+    "hash": "7b49d03ed23a4c07bbe222b80418d48d",
+    "file_size": 6551
+  },
+  {
+    "skill_name": "hex-grid-spatial",
+    "original_name": "hex-grid-spatial",
+    "original_task": "civ6-adjacency-optimizer",
+    "original_path": "<repo-root>/tasks-no-skills/civ6-adjacency-optimizer/environment/skills/hex-grid-spatial",
+    "hash": "3f35feb996141df3a7fc9d3619f563dc",
+    "file_size": 2757
+  },
+  {
+    "skill_name": "sqlite-map-parser",
+    "original_name": "sqlite-map-parser",
+    "original_task": "civ6-adjacency-optimizer",
+    "original_path": "<repo-root>/tasks-no-skills/civ6-adjacency-optimizer/environment/skills/sqlite-map-parser",
+    "hash": "8e2cb944fb3f564235b7d9413a19c0d1",
+    "file_size": 4160
+  },
+  {
+    "skill_name": "map-optimization-strategy",
+    "original_name": "map-optimization-strategy",
+    "original_task": "civ6-adjacency-optimizer",
+    "original_path": "<repo-root>/tasks-no-skills/civ6-adjacency-optimizer/environment/skills/map-optimization-strategy",
+    "hash": "650248a7569df73b256dbbabcd39a174",
+    "file_size": 4446
+  },
+  {
+    "skill_name": "exoplanet-workflows",
+    "original_name": "exoplanet-workflows",
+    "original_task": "exoplanet-detection-period",
+    "original_path": "<repo-root>/tasks-no-skills/exoplanet-detection-period/environment/skills/exoplanet-workflows",
+    "hash": "32367026c7b20c4db666fd870c5e10a8",
+    "file_size": 6363
+  },
+  {
+    "skill_name": "lomb-scargle-periodogram",
+    "original_name": "lomb-scargle-periodogram",
+    "original_task": "exoplanet-detection-period",
+    "original_path": "<repo-root>/tasks-no-skills/exoplanet-detection-period/environment/skills/lomb-scargle-periodogram",
+    "hash": "4ac78866f87d3a7b06ad9a186422543b",
+    "file_size": 3529
+  },
+  {
+    "skill_name": "box-least-squares",
+    "original_name": "box-least-squares",
+    "original_task": "exoplanet-detection-period",
+    "original_path": "<repo-root>/tasks-no-skills/exoplanet-detection-period/environment/skills/box-least-squares",
+    "hash": "8cb4d7756deac34b712af51e55efb3c9",
+    "file_size": 10281
+  },
+  {
+    "skill_name": "transit-least-squares",
+    "original_name": "transit-least-squares",
+    "original_task": "exoplanet-detection-period",
+    "original_path": "<repo-root>/tasks-no-skills/exoplanet-detection-period/environment/skills/transit-least-squares",
+    "hash": "cd8d566ad665ed44b3a9f77180201be8",
+    "file_size": 7895
+  },
+  {
+    "skill_name": "light-curve-preprocessing",
+    "original_name": "light-curve-preprocessing",
+    "original_task": "exoplanet-detection-period",
+    "original_path": "<repo-root>/tasks-no-skills/exoplanet-detection-period/environment/skills/light-curve-preprocessing",
+    "hash": "c6b4f6da6b8bd0c9a87e889a9b03b59b",
+    "file_size": 5511
+  },
+  {
+    "skill_name": "vulnerability-csv-reporting",
+    "original_name": "vulnerability-csv-reporting",
+    "original_task": "software-dependency-audit",
+    "original_path": "<repo-root>/tasks-no-skills/software-dependency-audit/environment/skills/vulnerability-csv-reporting",
+    "hash": "699b698c086888dbe031c40933b7ef32",
+    "file_size": 12202
+  },
+  {
+    "skill_name": "cvss-score-extraction",
+    "original_name": "cvss-score-extraction",
+    "original_task": "software-dependency-audit",
+    "original_path": "<repo-root>/tasks-no-skills/software-dependency-audit/environment/skills/cvss-score-extraction",
+    "hash": "74473081244192f5cd34c54bb398383f",
+    "file_size": 9163
+  },
+  {
+    "skill_name": "trivy-offline-vulnerability-scanning",
+    "original_name": "trivy-offline-vulnerability-scanning",
+    "original_task": "software-dependency-audit",
+    "original_path": "<repo-root>/tasks-no-skills/software-dependency-audit/environment/skills/trivy-offline-vulnerability-scanning",
+    "hash": "d4c536c2137618bb8795d7d5effe6f0a",
+    "file_size": 7180
+  },
+  {
+    "skill_name": "fuzzy-match",
+    "original_name": "fuzzy-match",
+    "original_task": "invoice-fraud-detection",
+    "original_path": "<repo-root>/tasks-no-skills/invoice-fraud-detection/environment/skills/fuzzy-match",
+    "hash": "991528d95cdc84011adb3e3eac880f11",
+    "file_size": 3173
+  },
+  {
+    "skill_name": "offer-letter-generator_docx",
+    "original_name": "docx",
+    "original_task": "offer-letter-generator",
+    "original_path": "<repo-root>/tasks-no-skills/offer-letter-generator/environment/skills/docx",
+    "hash": "e68b296c4816f08dbedc582167642aa5",
+    "file_size": 7869
+  },
+  {
+    "skill_name": "data-reconciliation",
+    "original_name": "data-reconciliation",
+    "original_task": "xlsx-recover-data",
+    "original_path": "<repo-root>/tasks-no-skills/xlsx-recover-data/environment/skills/data-reconciliation",
+    "hash": "04540cd94bdd3d45a53db3de08ae12b2",
+    "file_size": 2492
+  },
+  {
+    "skill_name": "image-ocr",
+    "original_name": "image-ocr",
+    "original_task": "jpg-ocr-stat",
+    "original_path": "<repo-root>/tasks-no-skills/jpg-ocr-stat/environment/skills/image-ocr",
+    "hash": "a815175ac1dde7701258103ed732db1d",
+    "file_size": 11348
+  },
+  {
+    "skill_name": "openai-vision",
+    "original_name": "openai-vision",
+    "original_task": "jpg-ocr-stat",
+    "original_path": "<repo-root>/tasks-no-skills/jpg-ocr-stat/environment/skills/openai-vision",
+    "hash": "c480c7d5c9c56a43158a547ae942a77f",
+    "file_size": 20003
+  },
+  {
+    "skill_name": "pareto-optimization",
+    "original_name": "pareto-optimization",
+    "original_task": "mars-clouds-clustering",
+    "original_path": "<repo-root>/tasks-no-skills/mars-clouds-clustering/environment/skills/pareto-optimization",
+    "hash": "9726db2c899dc0ee6aa888e1b7b87130",
+    "file_size": 4166
+  },
+  {
+    "skill_name": "parallel-processing",
+    "original_name": "parallel-processing",
+    "original_task": "mars-clouds-clustering",
+    "original_path": "<repo-root>/tasks-no-skills/mars-clouds-clustering/environment/skills/parallel-processing",
+    "hash": "c82dc5b78faf65873f21c0f680847fb2",
+    "file_size": 2042
+  },
+  {
+    "skill_name": "custom-distance-metrics",
+    "original_name": "custom-distance-metrics",
+    "original_task": "mars-clouds-clustering",
+    "original_path": "<repo-root>/tasks-no-skills/mars-clouds-clustering/environment/skills/custom-distance-metrics",
+    "hash": "12bcc57ccdc0da0fd2bbf4824cdde04e",
+    "file_size": 2696
+  },
+  {
+    "skill_name": "video-processor",
+    "original_name": "video-processor",
+    "original_task": "video-silence-remover",
+    "original_path": "<repo-root>/tasks/video-silence-remover/environment/skills/video-processor",
+    "hash": "19815e1dbd5e2607fcc0717553883556",
+    "file_size": 3211
+  },
+  {
+    "skill_name": "silence-detector",
+    "original_name": "silence-detector",
+    "original_task": "video-silence-remover",
+    "original_path": "<repo-root>/tasks/video-silence-remover/environment/skills/silence-detector",
+    "hash": "4aaa4819633fcd2c88d49e53ce218df7",
+    "file_size": 2396
+  },
+  {
+    "skill_name": "audio-extractor",
+    "original_name": "audio-extractor",
+    "original_task": "video-silence-remover",
+    "original_path": "<repo-root>/tasks/video-silence-remover/environment/skills/audio-extractor",
+    "hash": "8f5d8d94fc62c15c78587488725f8286",
+    "file_size": 1436
+  },
+  {
+    "skill_name": "report-generator",
+    "original_name": "report-generator",
+    "original_task": "video-silence-remover",
+    "original_path": "<repo-root>/tasks/video-silence-remover/environment/skills/report-generator",
+    "hash": "9acbf7cc9134a59d69bd07008166d7b1",
+    "file_size": 1795
+  },
+  {
+    "skill_name": "pause-detector",
+    "original_name": "pause-detector",
+    "original_task": "video-silence-remover",
+    "original_path": "<repo-root>/tasks/video-silence-remover/environment/skills/pause-detector",
+    "hash": "cf1fea1f63d172c73b438700f66309fe",
+    "file_size": 2568
+  },
+  {
+    "skill_name": "energy-calculator",
+    "original_name": "energy-calculator",
+    "original_task": "video-silence-remover",
+    "original_path": "<repo-root>/tasks/video-silence-remover/environment/skills/energy-calculator",
+    "hash": "526a0b9649f8a5bf384e2987bbd60c6c",
+    "file_size": 1747
+  },
+  {
+    "skill_name": "segment-combiner",
+    "original_name": "segment-combiner",
+    "original_task": "video-silence-remover",
+    "original_path": "<repo-root>/tasks/video-silence-remover/environment/skills/segment-combiner",
+    "hash": "0897bf9e5b17c7925f17465a28e4cbec",
+    "file_size": 1643
+  },
+  {
+    "skill_name": "artifact-evaluation",
+    "original_name": "artifact-evaluation",
+    "original_task": "unknown_task",
+    "original_path": "<repo-root>/libs/artifact-runner/eval-kit/skills/artifact-evaluation",
+    "hash": "70013840946c32a745ceca665ca40227",
+    "file_size": 3345
+  },
+  {
+    "skill_name": "nodemedic-demo_artifact-evaluation",
+    "original_name": "artifact-evaluation",
+    "original_task": "nodemedic-demo",
+    "original_path": "<repo-root>/libs/artifact-runner/tasks/nodemedic-demo/environment/skills/artifact-evaluation",
+    "hash": "959dde8c8cbe6d922e10d5e2d8a4ea68",
+    "file_size": 4104
+  },
+  {
+    "skill_name": "badge-evaluation",
+    "original_name": "badge-evaluation",
+    "original_task": "nodemedic-demo",
+    "original_path": "<repo-root>/libs/artifact-runner/tasks/nodemedic-demo/environment/skills/badge-evaluation",
+    "hash": "89dd4739a19cfd751f20b8d2ef1ae982",
+    "file_size": 3805
+  },
+  {
+    "skill_name": "pdf-reading",
+    "original_name": "pdf-reading",
+    "original_task": "nodemedic-demo",
+    "original_path": "<repo-root>/libs/artifact-runner/tasks/nodemedic-demo/environment/skills/pdf-reading",
+    "hash": "1f7cc1f4b1a71c6ec1126636b6bb5419",
+    "file_size": 3192
+  },
+  {
+    "skill_name": "unknown_task_artifact-evaluation",
+    "original_name": "artifact-evaluation",
+    "original_task": "unknown_task",
+    "original_path": "<repo-root>/libs/artifact-runner/skills/artifact-evaluation",
+    "hash": "0a5bf04f641a77c55c07016e90b242ab",
+    "file_size": 3963
+  }
+]

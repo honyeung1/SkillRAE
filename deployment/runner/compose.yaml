@@ -1,0 +1,34 @@
+services:
+  runner:
+    image: ${SKILLSBENCH_RUNNER_IMAGE:-skillsbench-private-runner:local}
+    build:
+      context: ../..
+      dockerfile: deployment/runner/Dockerfile
+    working_dir: /workspace/skillsbench-private
+    stdin_open: true
+    tty: true
+    env_file:
+      - ./runner.env
+    environment:
+      SKILLSBENCH_RUNNER_CONTAINER: "1"
+      SKILLSBENCH_REPO_ROOT: /workspace/skillsbench-private
+      SKILLSBENCH_ARTIFACT_ROOT: /workspace/artifacts
+      SKILLSBENCH_RUNS_ROOT: /workspace/artifacts/runs
+      SKILLSBENCH_SHARED_JOBS_DIR: /workspace/artifacts/jobs
+      SKILLSBENCH_CACHE_ROOT: /workspace/artifacts/.cache
+      SKILLSBENCH_RUNNER_HOST_REPO_ROOT: ${SKILLSBENCH_RUNNER_HOST_REPO_ROOT:-}
+      SKILLSBENCH_RUNNER_HOST_ARTIFACT_ROOT: ${SKILLSBENCH_RUNNER_HOST_ARTIFACT_ROOT:-}
+      SKILLSBENCH_DOCKER_MODE: socket
+      SKILLSBENCH_DOCKER_SOCKET: /var/run/docker.sock
+      SKILLSBENCH_PROXY_SCOPE: ${SKILLSBENCH_PROXY_SCOPE:-api_only}
+      SKILLSBENCH_DOCKER_PROXY_URL: ${SKILLSBENCH_DOCKER_PROXY_URL:-}
+      SKILLSBENCH_DISABLE_DOCKER_PROXY: ${SKILLSBENCH_DISABLE_DOCKER_PROXY:-}
+      SKILLSBENCH_RUNTIME_PYTHON_BIN: /opt/skillsbench-runner/bin/python
+      SKILLSBENCH_ENV_FILE: /workspace/skillsbench-private/deployment/runner/runner.env
+      SKILLSBENCH_API_ENV_FILE: /workspace/skillsbench-private/deployment/runner/api.env
+    volumes:
+      - ../..:/workspace/skillsbench-private
+      - ${SKILLSBENCH_RUNNER_HOST_REPO_ROOT}:${SKILLSBENCH_RUNNER_HOST_REPO_ROOT}
+      - ${SKILLSBENCH_ARTIFACTS_HOST_DIR:-./artifacts}:/workspace/artifacts
+      - ${SKILLSBENCH_RUNNER_HOST_ARTIFACT_ROOT}:${SKILLSBENCH_RUNNER_HOST_ARTIFACT_ROOT}
+      - ${SKILLSBENCH_DOCKER_SOCK_HOST_PATH:-/var/run/docker.sock}:/var/run/docker.sock
